@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;400;600;700;800&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "tertiary-container": "#012900",
+                    "surface-container-low": "#f3f4f5",
+                    "surface": "#f8f9fa",
+                    "secondary-fixed-dim": "#ffb77a",
+                    "inverse-on-surface": "#f0f1f2",
+                    "surface-dim": "#d9dadb",
+                    "outline-variant": "#c6c5d5",
+                    "on-error-container": "#93000a",
+                    "surface-container": "#edeeef",
+                    "on-tertiary-fixed-variant": "#035300",
+                    "on-primary-container": "#777eea",
+                    "secondary": "#8f4e00",
+                    "on-tertiary-fixed": "#012200",
+                    "surface-tint": "#4b53bc",
+                    "surface-container-high": "#e7e8e9",
+                    "on-surface": "#191c1d",
+                    "on-secondary": "#ffffff",
+                    "surface-container-lowest": "#ffffff",
+                    "tertiary": "#000f00",
+                    "on-background": "#191c1d",
+                    "on-tertiary-container": "#319e23",
+                    "background": "#f8f9fa",
+                    "error": "#ba1a1a",
+                    "secondary-fixed": "#ffdcc2",
+                    "primary-container": "#000080",
+                    "surface-container-highest": "#e1e3e4",
+                    "on-surface-variant": "#464653",
+                    "on-primary-fixed-variant": "#3239a3",
+                    "tertiary-fixed-dim": "#72de5c",
+                    "outline": "#767684",
+                    "tertiary-fixed": "#8dfc75",
+                    "surface-variant": "#e1e3e4",
+                    "on-secondary-fixed": "#2e1500",
+                    "on-error": "#ffffff",
+                    "inverse-surface": "#2e3132",
+                    "primary-fixed-dim": "#bfc2ff",
+                    "primary": "#00003c",
+                    "on-primary-fixed": "#00006e",
+                    "error-container": "#ffdad6",
+                    "on-primary": "#ffffff",
+                    "on-secondary-container": "#683700",
+                    "on-secondary-fixed-variant": "#6d3a00",
+                    "secondary-container": "#fe9832",
+                    "primary-fixed": "#e0e0ff",
+                    "surface-bright": "#f8f9fa",
+                    "on-tertiary": "#ffffff",
+                    "inverse-primary": "#bfc2ff"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Manrope"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            display: inline-block;
+            vertical-align: middle;
+        }
+        .editorial-text-shadow {
+            text-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body class="bg-surface font-body text-on-surface">
+<!-- Top Navigation Shell -->
+<header class="fixed top-0 left-0 w-full z-50 bg-[#00003c] shadow-lg backdrop-blur-md bg-opacity-70 transition-all duration-300">
+<div class="flex justify-between items-center w-full px-8 py-4 max-w-7xl mx-auto">
+<div class="text-lg font-extrabold tracking-tighter text-white font-headline">
+                Dyaneshawar Mulay Foundation
+            </div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="font-manrope tracking-tight leading-relaxed uppercase font-semibold text-xs text-white/80 hover:text-white transition-colors" href="#">Home</a>
+<a class="font-manrope tracking-tight leading-relaxed uppercase font-semibold text-xs text-white/80 hover:text-white transition-colors" href="#">About</a>
+<a class="font-manrope tracking-tight leading-relaxed uppercase font-semibold text-xs text-white border-b-2 border-[#fe9832] pb-1" href="#">Projects</a>
+<a class="font-manrope tracking-tight leading-relaxed uppercase font-semibold text-xs text-white/80 hover:text-white transition-colors" href="#">Impact</a>
+</nav>
+<button class="bg-secondary-container text-on-primary px-6 py-2.5 rounded-md font-headline font-bold text-xs tracking-widest hover:bg-[#000080] transition-all duration-300 active:scale-95">
+                DONATE NOW
+            </button>
+</div>
+</header>
+<main class="pt-24 pb-20">
+<!-- Hero Section -->
+<section class="relative px-8 pt-12 pb-24 overflow-hidden">
+<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
+<div class="md:col-span-7 z-10">
+<span class="font-label text-secondary font-bold uppercase tracking-[0.2em] text-xs mb-4 block">Our Calendar</span>
+<h1 class="font-headline text-5xl md:text-7xl font-extrabold tracking-tight text-primary leading-[1.1] mb-6">
+                        Collective <span class="text-secondary-container">Action</span> &amp; Diplomatic Discourse
+                    </h1>
+<p class="font-body text-lg text-on-surface-variant max-w-xl leading-relaxed">
+                        Join us at the intersection of diplomacy and social change. Our curated events bridge the gap between global policy and local community impact.
+                    </p>
+</div>
+<div class="md:col-span-5 relative">
+<div class="aspect-[4/5] bg-surface-container overflow-hidden rounded-lg shadow-2xl rotate-3 transform translate-x-4">
+<img class="w-full h-full object-cover" data-alt="Dignified conference hall with warm lighting and a group of people engaged in high-level diplomatic discussion" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDykwf8ZdUexD0fua_uvL164YSBasLDsQxkxqptEXKlNarry63BP3ntUqs0EuOkMxZmdnTuuwogpaMylEf1zcxOi51ptjq0VtaG7CRsA24AJgT-pyrQyDvaDgMVcAcgxfeEsLQBMLc_6mVWXr4OxwiJOAeYf6H4xWHpdsLtd7jfOBnAdafEl7I4yL5RlQNxJGLNQfWraWSBSUwIy_h1Xj4Yx7jbcaFX3IzO2FIKKVDpkFghUr-sYIxhVemgPFGVxS4keRnHAVPFLoCp"/>
+</div>
+<div class="absolute -bottom-8 -left-8 aspect-square w-48 bg-secondary-container p-6 shadow-xl -rotate-6 hidden md:block">
+<div class="border border-white/20 h-full w-full flex flex-col justify-center items-center text-white text-center">
+<span class="font-headline text-4xl font-bold">12+</span>
+<span class="font-label text-[10px] uppercase tracking-widest">Upcoming Sessions</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Featured / Next Event - Asymmetric Layout -->
+<section class="px-8 py-20 bg-surface-container">
+<div class="max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row gap-0">
+<div class="md:w-1/2 bg-primary p-12 md:p-16 flex flex-col justify-center order-2 md:order-1">
+<div class="bg-secondary-container text-white self-start px-3 py-1 mb-6 text-[10px] font-bold uppercase tracking-widest">Featured Seminar</div>
+<h2 class="font-headline text-3xl md:text-4xl font-bold text-white mb-6 leading-tight">Navigating Global South Relations in the 21st Century</h2>
+<div class="space-y-4 mb-8">
+<div class="flex items-center text-white/80 gap-3">
+<span class="material-symbols-outlined text-secondary-container">calendar_today</span>
+<span class="font-label text-sm tracking-wide">OCTOBER 14, 2024 • 10:00 AM</span>
+</div>
+<div class="flex items-center text-white/80 gap-3">
+<span class="material-symbols-outlined text-secondary-container">location_on</span>
+<span class="font-label text-sm tracking-wide">CONSTITUTION CLUB OF INDIA, NEW DELHI</span>
+</div>
+</div>
+<button class="bg-white text-primary px-8 py-4 rounded-md font-headline font-bold text-sm hover:bg-secondary-container hover:text-white transition-all self-start">
+                            REGISTER FOR SEAT
+                        </button>
+</div>
+<div class="md:w-1/2 h-80 md:h-auto order-1 md:order-2">
+<img class="w-full h-full object-cover" data-alt="Modern high-tech boardroom setting with glass walls and professional atmosphere for a diplomatic summit" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAaj4DNrYBpp3P0VGznaI-srORiNL9MLn1PVyn06hkTBRCCSzuOb_B-f1AthItVFZt6WqJv-wfj0THeVXNnXPcLG_j63m-4UGCTearKN3AL0_ZfOFmt79RrZ-Z3_56_10yLC_DtBHFyw1xJOFPdIMx6qS4xkWD-wv530AyScycky8SVbYdye7AJQs4y3DrRswj8w8GTrRu3JWeBoF5mAY5xvhyw_ARADjzphRz2VhuGlZ-8xgXZ27yOq4b3XS2c1c8LithmWS6Ovtml"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Chronological Grid -->
+<section class="px-8 py-24">
+<div class="max-w-7xl mx-auto">
+<div class="flex justify-between items-end mb-16">
+<div>
+<h2 class="font-headline text-3xl font-extrabold text-primary mb-2">Upcoming Engagements</h2>
+<div class="w-20 h-1.5 bg-secondary-container"></div>
+</div>
+<a class="group flex items-center gap-2 font-label font-bold text-xs tracking-widest text-primary hover:text-secondary transition-colors" href="#">
+                        ARCHIVE OF PAST EVENTS
+                        <span class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-16">
+<!-- Event Card 1 -->
+<div class="flex flex-col group">
+<div class="mb-6 relative overflow-hidden bg-surface-container-low aspect-[16/10]">
+<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500 group-hover:scale-105" data-alt="Professional workshop setting where a mentor is speaking to a group of young enthusiastic individuals" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDkrcTIn8499udTId9hVF1HmU4NFqb6jFggjmW1EXobghEd-aYveCW81Jq3JgaqoBTpwT8fyGN8u1P1QygysTAwE31wjCcL__qJ1b8r8I2ZHl88Jaxt2li6IEblgfxAFfb2nLvh5dx6HRJ5cMxfxjoYUMS0V0H1I4D_DYVnwYORMOmrO8bAJ3u0XZSjvz0u0owugGHss5v8udf1owyjFFPQIck-iySludCyIwtL5QomtcEpSlTUbNkfASiUfxfA41u9KCilA3N8eePL"/>
+<div class="absolute top-4 left-4 bg-white px-4 py-2 text-center shadow-lg">
+<span class="block text-primary font-headline font-extrabold text-xl leading-none">22</span>
+<span class="block text-on-surface-variant font-label text-[10px] font-bold uppercase tracking-tighter">OCT</span>
+</div>
+</div>
+<span class="font-label text-secondary text-[10px] font-bold uppercase tracking-widest mb-2">Education &amp; Outreach</span>
+<h3 class="font-headline text-xl font-bold text-primary mb-4 leading-snug group-hover:text-secondary-container transition-colors">Youth Leadership Summit: Voices of Pune</h3>
+<div class="flex items-center gap-2 text-on-surface-variant mb-6 text-sm">
+<span class="material-symbols-outlined text-base">location_on</span>
+<span>Savitribai Phule Pune University</span>
+</div>
+<button class="mt-auto border-b border-outline-variant py-2 flex items-center justify-between font-label font-bold text-xs tracking-widest hover:border-primary transition-all">
+                            RSVP NOW
+                            <span class="material-symbols-outlined text-sm">chevron_right</span>
+</button>
+</div>
+<!-- Event Card 2 -->
+<div class="flex flex-col group">
+<div class="mb-6 relative overflow-hidden bg-surface-container-low aspect-[16/10]">
+<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500 group-hover:scale-105" data-alt="Elegant literary festival setting with books and sophisticated audience listening to a speaker" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC5TJozaDKRZFCftmq1IZtkjtCLjTVpfMiYQeCX7fxpIswHrxzhyPtXp2xClnNABn1aNAtqPVG7w48L2MCLOd3IdLIj7cUibQQTRxe_QBiJzJwTZfOr28GWbinH-ModgKDPdtZzEFZqwahj4u05GiIiLyL9KV-FvK1p1jjIyotyflCHtGKV9AoYYEIJAdaGGoUR0Cnu3ZihAQYfNL3aJeBVg_X2bZUJrTaqsXy0SXixZKeOiWXurz3qWJtvqIwd0BIQ3nwqSqELmDfr"/>
+<div class="absolute top-4 left-4 bg-white px-4 py-2 text-center shadow-lg">
+<span class="block text-primary font-headline font-extrabold text-xl leading-none">05</span>
+<span class="block text-on-surface-variant font-label text-[10px] font-bold uppercase tracking-tighter">NOV</span>
+</div>
+</div>
+<span class="font-label text-secondary text-[10px] font-bold uppercase tracking-widest mb-2">Policy Dialogue</span>
+<h3 class="font-headline text-xl font-bold text-primary mb-4 leading-snug group-hover:text-secondary-container transition-colors">India's Soft Power: A Diplomatic Review</h3>
+<div class="flex items-center gap-2 text-on-surface-variant mb-6 text-sm">
+<span class="material-symbols-outlined text-base">location_on</span>
+<span>India Habitat Centre, New Delhi</span>
+</div>
+<button class="mt-auto border-b border-outline-variant py-2 flex items-center justify-between font-label font-bold text-xs tracking-widest hover:border-primary transition-all">
+                            RSVP NOW
+                            <span class="material-symbols-outlined text-sm">chevron_right</span>
+</button>
+</div>
+<!-- Event Card 3 -->
+<div class="flex flex-col group">
+<div class="mb-6 relative overflow-hidden bg-surface-container-low aspect-[16/10]">
+<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500 group-hover:scale-105" data-alt="Community medical outreach camp with doctors and local volunteers assisting elderly citizens" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBO3U_TYe5ma-00qGi5HpjyYsrzd3yxLgdbri-WygrdTGEvt-qg1fEr2Yi35Ahm8YUJhX9gBHK4OgjdxP5w2HGUoAs-okd5CXBsepsf3SI2nFFiFz5LegsJ-mcGu8IP2zwdiWyjJ3ly7S2MHdEiDKLQQM1gpbwfyDKV71aeSd2ohB5bCfkrQB6E0C3A3PdoBP-b5tswqMvE3jsJmllHPqJCZLStOY621zcz2GcgOvK__EEOufEtUSDJaIhvEEX5KlmcjXGyc-MB9pWH"/>
+<div class="absolute top-4 left-4 bg-white px-4 py-2 text-center shadow-lg">
+<span class="block text-primary font-headline font-extrabold text-xl leading-none">18</span>
+<span class="block text-on-surface-variant font-label text-[10px] font-bold uppercase tracking-tighter">NOV</span>
+</div>
+</div>
+<span class="font-label text-secondary text-[10px] font-bold uppercase tracking-widest mb-2">Medical Outreach</span>
+<h3 class="font-headline text-xl font-bold text-primary mb-4 leading-snug group-hover:text-secondary-container transition-colors">Rural Health Empowerment Drive</h3>
+<div class="flex items-center gap-2 text-on-surface-variant mb-6 text-sm">
+<span class="material-symbols-outlined text-base">location_on</span>
+<span>Satara Regional Community Center</span>
+</div>
+<button class="mt-auto border-b border-outline-variant py-2 flex items-center justify-between font-label font-bold text-xs tracking-widest hover:border-primary transition-all">
+                            RSVP NOW
+                            <span class="material-symbols-outlined text-sm">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Subscription / Newsletter -->
+<section class="px-8 py-20 bg-primary overflow-hidden relative">
+<!-- Decorative Textured Background -->
+<div class="absolute inset-0 opacity-10 pointer-events-none" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD7GE90_fUymXyksXKhSv_mfkkda3drkxfNeZ6ccncg7mSMgyh2n0Ymef3Dq4lCxXJhnLUZWPUHP2OZQq_W8505bR1ANFxXlwuQkumwD5FdJHn22d8ZRoQ5v0w_TFM0uW0QKI8oJdvYqRDyjmYwJ91nbAGCpLb9wbq84ce1lH9HoapaEc5hhFFK5Q_nNgYUFFYaXcgqOy8HnllJ4vWFQUyO4V0ko0xsTkTjdwrXjCwjxUw-s2hf0DIwXdW5me1MDT6oN5xwaLqPaqVj');"></div>
+<div class="max-w-3xl mx-auto text-center relative z-10">
+<h2 class="font-headline text-3xl font-bold text-white mb-4">Stay Informed on Future Initiatives</h2>
+<p class="font-body text-white/60 mb-10 text-lg">Receive exclusive invitations to our high-level seminars and foundation updates directly to your inbox.</p>
+<form class="flex flex-col md:flex-row gap-4">
+<input class="flex-grow bg-white/5 border border-white/10 px-6 py-4 text-white font-label text-sm tracking-widest focus:outline-none focus:border-secondary-container transition-colors" placeholder="YOUR EMAIL ADDRESS" type="email"/>
+<button class="bg-secondary-container text-white px-10 py-4 font-headline font-bold text-sm hover:bg-[#fe9832]/80 transition-all uppercase tracking-widest">
+                        Subscribe
+                    </button>
+</form>
+</div>
+</section>
+</main>
+<!-- Footer Shell -->
+<footer class="bg-[#00003c] flex flex-col md:flex-row justify-between items-start w-full px-12 py-16 gap-8 border-t-4 border-t-[#fe9832] border-b-4 border-b-[#2e7d32] relative overflow-hidden">
+<div class="z-10 flex flex-col gap-6 max-w-sm">
+<div class="text-2xl font-bold text-white font-headline">Dr. Dyaneshawar Mulay Foundation</div>
+<p class="font-manrope text-white opacity-70 text-sm leading-relaxed">
+                Empowering communities through knowledge, diplomacy, and sustainable grassroots initiatives. Dedicated to the vision of a progressive and inclusive India.
+            </p>
+</div>
+<div class="z-10 flex flex-col gap-4">
+<span class="text-[#fe9832] font-manrope font-bold text-sm tracking-widest uppercase">Quick Links</span>
+<ul class="flex flex-col gap-3">
+<li><a class="text-gray-300 hover:text-white font-manrope text-sm hover:underline decoration-[#fe9832] transition-all" href="#">About Our Mission</a></li>
+<li><a class="text-gray-300 hover:text-white font-manrope text-sm hover:underline decoration-[#fe9832] transition-all" href="#">Strategic Projects</a></li>
+<li><a class="text-gray-300 hover:text-white font-manrope text-sm hover:underline decoration-[#fe9832] transition-all" href="#">Impact Reports</a></li>
+</ul>
+</div>
+<div class="z-10 flex flex-col gap-4">
+<span class="text-[#fe9832] font-manrope font-bold text-sm tracking-widest uppercase">Legal</span>
+<ul class="flex flex-col gap-3">
+<li><a class="text-gray-300 hover:text-white font-manrope text-sm hover:underline decoration-[#fe9832] transition-all" href="#">Privacy Policy</a></li>
+<li><a class="text-gray-300 hover:text-white font-manrope text-sm hover:underline decoration-[#fe9832] transition-all" href="#">Terms of Use</a></li>
+<li><a class="text-gray-300 hover:text-white font-manrope text-sm hover:underline decoration-[#fe9832] transition-all" href="#">Contact Us</a></li>
+</ul>
+</div>
+<div class="w-full mt-8 pt-8 border-t border-white/10 flex justify-between items-center z-10">
+<p class="font-manrope text-xs text-gray-400">© 2024 Dr. Dyaneshawar Mulay Foundation. All Rights Reserved.</p>
+<div class="flex gap-6">
+<a class="text-white/60 hover:text-[#fe9832] transition-colors" href="#"><span class="material-symbols-outlined text-xl">language</span></a>
+<a class="text-white/60 hover:text-[#fe9832] transition-colors" href="#"><span class="material-symbols-outlined text-xl">mail</span></a>
+</div>
+</div>
+<!-- Background watermark effect from Design System -->
+<div class="absolute right-[-10%] bottom-[-10%] opacity-[0.03] select-none pointer-events-none">
+<span class="font-headline text-[300px] font-black text-white leading-none">DMF</span>
+</div>
+</footer>
+</body></html>
