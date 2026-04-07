@@ -50,6 +50,10 @@ export default function Donate() {
 <div className="space-y-4 mb-10">
 <input className="w-full px-4 py-4 bg-surface-container-low border-none rounded-xl focus:ring-2 focus:ring-primary" placeholder="Full Name" type="text"/>
 <input className="w-full px-4 py-4 bg-surface-container-low border-none rounded-xl focus:ring-2 focus:ring-primary" placeholder="Email Address" type="email"/>
+<div className="relative">
+<span className="absolute left-4 top-1/2 -translate-y-1/2 material-symbols-outlined text-outline text-xl">phone</span>
+<input className="w-full pl-12 pr-4 py-4 bg-surface-container-low border-none rounded-xl focus:ring-2 focus:ring-primary" placeholder="Phone Number" type="tel"/>
+</div>
 </div>
 <button className="w-full py-5 bg-primary text-white font-headline font-bold text-lg rounded-xl hover:bg-primary-container transition-all flex items-center justify-center gap-3 active:scale-[0.98]">
 <span className="material-symbols-outlined" data-weight="fill">favorite</span>

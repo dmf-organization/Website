@@ -196,11 +196,6 @@ export default function About() {
                                 <img alt="Dr. Dnyaneshwar Mule" className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-700" src="/Images/dr_mule.png" />
                             </div>
                             <div className="absolute -bottom-12 -right-12 w-64 h-64 bg-secondary-container/10 -z-10 rounded-full blur-3xl"></div>
-                            {/* Badge Card */}
-                            <div className="absolute -bottom-4 -right-4 bg-primary text-white p-4 rounded-xl shadow-xl max-w-[180px]">
-                                <div className="text-[#fe9832] text-xs font-bold uppercase tracking-widest mb-1">IFS Batch 1983</div>
-                                <div className="text-white text-xs">Indian Foreign Service</div>
-                            </div>
                         </div>
                         <div className="md:col-span-8">
                             <span className="font-label text-secondary text-xs font-bold tracking-widest uppercase mb-4 block">FOUNDER & PRESIDENT</span>

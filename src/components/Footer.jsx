@@ -8,33 +8,30 @@ const Footer = () => (
             <div className="absolute -bottom-20 -right-20 w-[600px] h-[600px] bg-primary-container rounded-full blur-[100px]"></div>
         </div>
 
-        {/* ── DONATE CTA BAND ── */}
-        <div className="relative z-10 bg-gradient-to-r from-[#fe9832] via-[#e07b10] to-[#fe9832] py-10 px-8">
-            <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
+        {/* ── DONATE CTA (Short & Simple) ── */}
+        <div className="relative z-10 border-t-4 border-t-[#fe9832] border-b border-white/5 py-8 mt-2">
+            <div className="max-w-7xl mx-auto px-12 flex flex-col md:flex-row items-center justify-between gap-6">
                 <div>
-                    <p className="text-white font-headline text-xs font-black tracking-[0.25em] uppercase opacity-80 mb-1">
+                    <p className="text-[#fe9832] font-headline text-xs font-black tracking-[0.2em] uppercase mb-1">
                         Support The Mission
                     </p>
-                    <h2 className="font-headline text-2xl md:text-3xl font-extrabold text-white leading-tight tracking-tight">
+                    <h2 className="font-headline text-xl font-extrabold text-white leading-tight tracking-tight">
                         Make a Difference Today
                     </h2>
-                    <p className="text-white/80 text-sm mt-1 font-medium">
-                        Your contribution empowers communities across India.
-                    </p>
                 </div>
                 <Link
                     to="/donate"
                     id="footer-donate-btn"
-                    className="shrink-0 inline-flex items-center gap-3 px-10 py-4 bg-[#00003c] text-white font-headline font-black text-sm tracking-[0.2em] uppercase rounded-md shadow-2xl hover:bg-white hover:text-[#00003c] transition-all duration-300 active:scale-95"
+                    className="shrink-0 inline-flex items-center gap-2 px-8 py-3 bg-[#fe9832] text-[#00003c] font-headline font-black text-xs tracking-[0.15em] uppercase rounded-sm shadow-lg hover:bg-white hover:text-[#00003c] transition-all duration-300 active:scale-95"
                 >
-                    <span className="material-symbols-outlined text-lg">favorite</span>
+                    <span className="material-symbols-outlined text-base">favorite</span>
                     DONATE NOW
                 </Link>
             </div>
         </div>
 
         {/* ── MAIN FOOTER CONTENT ── */}
-        <div className="flex flex-col md:flex-row justify-between items-start w-full px-12 py-16 gap-12 max-w-7xl mx-auto relative z-10 border-t-4 border-t-[#fe9832]">
+        <div className="flex flex-col md:flex-row justify-between items-start w-full px-12 py-12 gap-12 max-w-7xl mx-auto relative z-10">
             {/* Brand */}
             <div className="flex-1 max-w-sm">
                 <div className="text-xl font-bold text-white font-headline mb-2 tracking-tighter">

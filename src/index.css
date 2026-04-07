@@ -13,6 +13,17 @@ body::-webkit-scrollbar,
     display: none;              /* Chrome, Safari, Opera */
 }
 
+/* ── Global Micro-Animations for Clickable Elements ── */
+a, button {
+    transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
+}
+a:hover, button:hover {
+    transform: translateY(-2px);
+}
+a:active, button:active {
+    transform: translateY(0) scale(0.97);
+}
+
 /* ── Slider keyframes ── */
 @keyframes slideInRight {
     from { transform: translateX(100%); opacity: 0; }
