@@ -146,7 +146,7 @@ export default function Projects() {
 </section>
 {/* CTA Section */}
 <section className="mt-32 px-8 pb-32">
-<div className="max-w-7xl mx-auto rounded-2xl tonal-layer p-12 md:p-24 relative overflow-hidden text-center">
+<div className="max-w-7xl mx-auto rounded-2xl bg-primary p-12 md:p-24 relative overflow-hidden text-center">
 <div className="relative z-10 max-w-3xl mx-auto">
 <h2 className="font-headline text-4xl md:text-5xl font-bold text-white mb-8">Become a Partner in Our National Mission.</h2>
 <p className="text-white/80 font-body text-lg mb-12 leading-relaxed">

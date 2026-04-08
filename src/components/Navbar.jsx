@@ -27,7 +27,7 @@ const Navbar = () => {
                     <div className="hidden md:flex items-center gap-6">
                         <Link className={getLinkClass('/')} to="/">Home</Link>
                         <Link className={getLinkClass('/about')} to="/about">What we are</Link>
-                        <Link className={getLinkClass('/projects')} to="/projects">What we do</Link>
+                        <Link className={getLinkClass('/icoe')} to="/icoe">What we do</Link>
                         <Link className={getLinkClass('/media')} to="/media">Media</Link>
                     </div>
                     <button

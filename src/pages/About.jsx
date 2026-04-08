@@ -9,17 +9,17 @@ const SLIDES = [
         caption: 'Dr. Dnyaneshwar Mule — Founder & President',
     },
     {
-        src: '/Images/about_page_1.png',
+        src: '/Images/social_work_1.png',
         alt: 'Dr. Dnyaneshwar Mule',
         caption: 'Dr. Dnyaneshwar Mule — Founder & President',
     },
     {
-        src: '/Images/about_page_4.png',
+        src: '/Images/social_work_2.png',
         alt: 'Dr. Dnyaneshwar Mule',
         caption: 'Dr. Dnyaneshwar Mule — Founder & President',
     },
     {
-        src: '/Images/3.png',
+        src: '/Images/social_work_3.png',
         alt: 'DMF Community Initiatives',
         caption: 'Empowering Communities Through Education',
     },
@@ -199,10 +199,10 @@ export default function About() {
                         </div>
                         <div className="md:col-span-8">
                             <span className="font-label text-secondary text-xs font-bold tracking-widest uppercase mb-4 block">FOUNDER & PRESIDENT</span>
-                            <h2 className="font-headline text-4xl font-bold text-primary mb-6 leading-tight">Dr. Dnyaneshwar Mule</h2>
+                            <h2 className="font-headline text-4xl font-bold text-primary mb-6 leading-tight">Dr. Dnyaneshwar Mulay</h2>
                             <div className="space-y-5 text-on-surface-variant leading-relaxed text-base">
                                 <p>
-                                    Dr. Dnyaneshwar Mule is a distinguished career diplomat of the Indian Foreign Service and the Founder & President of the Dr. Dnyaneshwar Mule Foundation. He previously served as Secretary in the Ministry of External Affairs, Government of India, and as an Advisor to the National Skill Development Corporation.
+                                    Dr. Dnyaneshwar Mulay is a distinguished career diplomat of the Indian Foreign Service and the Founder & President of the Dr. Dnyaneshwar Mule Foundation. He previously served as Secretary in the Ministry of External Affairs, Government of India, and as an Advisor to the National Skill Development Corporation.
                                 </p>
                                 <p>
                                     Since 2019, DMF is a globally recognized organization with deep roots in India, committed to providing innovative and beneficial solutions. During flood emergencies in Kolhapur Sangali district in Maharashtra and subsequently during COVID-19, DMF strengthened its work and today conducts significant activities contributing to social change.
@@ -216,7 +216,7 @@ export default function About() {
                             </div>
                             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-8">
                                 {[
-                                    { role: 'President', org: 'Dr. Dnyaneshwar Mulay Foundation' },
+                                    { role: 'President', org: 'Dr. Dnyaneshwar Mule Foundation' },
                                     { role: 'Advisor', org: 'ICOE, Khadki Cantonment' },
                                     { role: 'Former Advisor', org: 'NSDC, Govt. of India' },
                                     { role: 'Former Secretary', org: 'MEA, Govt. of India' },
@@ -284,21 +284,21 @@ export default function About() {
                                 },
                                 {
                                     icon: 'build',
-                                    title: 'Skill Development',
+                                    title: 'Skill Reach',
                                     desc: 'Delivering SkillReach programmes in foreign languages (German, Japanese), digital skills, and vocational trades to hundreds of youth from defence and civilian families.',
                                     color: 'border-[#2e7d32]',
                                     iconColor: 'text-[#2e7d32]',
                                 },
                                 {
                                     icon: 'woman',
-                                    title: "Women's Empowerment",
+                                    title: "Women's Leadership",
                                     desc: 'Empowering women through the She Leads programme — forming producer groups, providing financial literacy, and connecting them to markets through enterprise development.',
                                     color: 'border-secondary-container',
                                     iconColor: 'text-secondary-container',
                                 },
                                 {
                                     icon: 'flight_takeoff',
-                                    title: 'Global Job Placement',
+                                    title: 'International Job Placement',
                                     desc: 'Facilitating international employment opportunities for youth in Germany and other countries through partnerships with global recruitment agencies.',
                                     color: 'border-primary',
                                     iconColor: 'text-primary',
@@ -328,6 +328,81 @@ export default function About() {
                     </div>
                 </section>
 
+                {/* ── Our Global Partners ── Flags Marquee ────────────────── */}
+                <section className="py-20 bg-primary relative overflow-hidden">
+                    <div className="absolute inset-0 opacity-5 pointer-events-none" style={{ backgroundImage: 'radial-gradient(#ffffff 0.5px, transparent 0.5px)', backgroundSize: '24px 24px' }}></div>
+                    <div className="relative z-10">
+                        {/* Heading */}
+                        <div className="text-center mb-14 px-8">
+                            <span className="font-label text-secondary-container text-xs font-bold tracking-widest uppercase mb-3 block">International Presence</span>
+                            <h2 className="font-headline text-4xl font-extrabold text-white mb-4">Our Global Partners</h2>
+                            <div className="w-16 h-1 bg-secondary-container mx-auto mb-4"></div>
+                            <p className="text-white/60 max-w-xl mx-auto text-sm leading-relaxed">
+                                DMF collaborates with institutions, placement partners, and organisations across the globe to create international opportunities for Indian youth.
+                            </p>
+                        </div>
+
+                        {/* Marquee — fade edges */}
+                        <div
+                            className="relative overflow-hidden"
+                            style={{
+                                maskImage: 'linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%)',
+                                WebkitMaskImage: 'linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%)',
+                            }}
+                        >
+                            <div
+                                style={{
+                                    display: 'flex',
+                                    gap: '2.5rem',
+                                    width: 'max-content',
+                                    animation: 'flags-marquee-rtl 35s linear infinite',
+                                    paddingBlock: '1rem',
+                                }}
+                            >
+                                {/* Duplicate the list twice for seamless infinite loop */}
+                                {[...Array(2)].flatMap((_, pass) =>
+                                    [
+                                        { flag: '/flags/china.png', country: 'China' },
+                                        { flag: '/flags/germany.png', country: 'Germany' },
+                                        { flag: '/flags/india.png', country: 'India' },
+                                        { flag: '/flags/japan.png', country: 'Japan' },
+                                        { flag: '/flags/uae.png', country: 'UAE' },
+                                        { flag: '/flags/uk.png', country: 'UK' },
+                                        { flag: '/flags/usa.png', country: 'USA' },
+                                    ].map((item, i) => (
+                                        <div
+                                            key={`${pass}-${i}`}
+                                            className="group flex flex-col items-center gap-4 flex-shrink-0"
+                                            style={{ width: '160px' }}
+                                        >
+                                            {/* Flag card */}
+                                            <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-4 w-full h-28 flex items-center justify-center shadow-xl group-hover:bg-white/20 group-hover:-translate-y-2 transition-all duration-300 overflow-hidden">
+                                                <img
+                                                    src={item.flag}
+                                                    alt={`${item.country} flag`}
+                                                    className="w-full h-full object-cover rounded-xl transition-transform duration-300 group-hover:scale-110"
+                                                />
+                                            </div>
+                                            {/* Country label */}
+                                            <div className="text-white/70 text-xs uppercase tracking-widest font-black text-center group-hover:text-secondary-container transition-colors">
+                                                {item.country}
+                                            </div>
+                                        </div>
+                                    ))
+                                )}
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* Keyframe for this section */}
+                    <style>{`
+                        @keyframes flags-marquee-rtl {
+                            0%   { transform: translateX(0); }
+                            100% { transform: translateX(-50%); }
+                        }
+                    `}</style>
+                </section>
+
 
                 {/* Team Cards */}
                 <section className="py-24 bg-surface-container-high">
@@ -336,27 +411,48 @@ export default function About() {
                             <span className="font-label text-secondary text-xs font-bold tracking-widest uppercase mb-4 block">ICOE LEADERSHIP</span>
                             <h2 className="font-headline text-4xl font-extrabold text-primary">Meet Our Team</h2>
                         </div>
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                        {/* Leadership Row */}
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto mb-8">
                             {/* Dr. Mule */}
-                            <div className="bg-surface-container-lowest editorial-shadow group overflow-hidden rounded-xl">
-                                <div className="aspect-square overflow-hidden bg-gradient-to-br from-primary to-primary-container">
-                                    <img alt="Dr. Dnyaneshwar Mule" className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500" src="/Images/dr_mule.png" />
-                                </div>
-                                <div className="p-8">
-                                    <h4 className="font-headline text-xl font-bold text-primary mb-1">Dr. Dnyaneshwar Mulay</h4>
-                                    <p className="text-secondary font-medium text-sm uppercase tracking-wide mb-3">President, DMF | Advisor, ICOE Khadki</p>
-                                    <p className="text-on-surface-variant text-sm leading-relaxed">Former Secretary, Ministry of External Affairs, GoI. Former Advisor, NSDC. Indian Foreign Service, IFS Batch 1983.</p>
+                            <div className="flip-card aspect-[3/4] w-full max-w-[360px] mx-auto rounded-xl editorial-shadow cursor-pointer">
+                                <div className="flip-card-inner rounded-xl">
+                                    <div className="flip-card-front bg-surface-container-lowest flex flex-col rounded-xl overflow-hidden shadow-sm">
+                                        <div className="flex-1 bg-gradient-to-br from-primary to-primary-container relative overflow-hidden">
+                                            <img alt="Dr. Dnyaneshwar Mule" className="w-full h-full object-cover object-top" src="/Images/dr_mule.png" />
+                                        </div>
+                                        <div className="p-6 shrink-0 bg-surface-container-lowest text-center">
+                                            <h4 className="font-headline text-xl font-bold text-primary mb-1">Dr. Dnyaneshwar Mulay</h4>
+                                            <p className="text-secondary font-medium text-xs sm:text-sm text-balance uppercase tracking-wide">President, DMF | Advisor, ICOE Khadki</p>
+                                        </div>
+                                    </div>
+                                    <div className="flip-card-back bg-white rounded-xl p-6 sm:p-8 flex flex-col items-center justify-center text-center shadow-xl border-t-[6px] border-primary">
+                                        <h4 className="font-headline text-2xl sm:text-3xl font-bold text-primary mb-4">Dr. Dnyaneshwar Mulay</h4>
+                                        <div className="w-12 h-1 bg-secondary-container mb-6"></div>
+                                        <p className="font-body text-sm sm:text-base leading-relaxed text-on-surface-variant">
+                                            Former Secretary, Ministry of External Affairs, GoI. Former Advisor, NSDC. Indian Foreign Service, IFS Batch 1983.
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                             {/* Mr. Riyaj */}
-                            <div className="bg-surface-container-lowest editorial-shadow group overflow-hidden rounded-xl">
-                                <div className="aspect-square overflow-hidden bg-gradient-to-br from-[#2e7d32] to-[#1b5e20]">
-                                    <img alt="Mr. Riyaj Pirjade" className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500" src="/Images/mr_riyaj.png" />
-                                </div>
-                                <div className="p-8">
-                                    <h4 className="font-headline text-xl font-bold text-primary mb-1">Mr. Riyaj Pirjade</h4>
-                                    <p className="text-[#2e7d32] font-medium text-sm uppercase tracking-wide mb-3">Director — ICOE</p>
-                                    <p className="text-on-surface-variant text-sm leading-relaxed">Pursuing PhD in Social Innovation, MSW Community Development. Contributed to NITI Aayog projects, Savitribai Phule Pune University, SKF India & Symbiosis University CSR programs.</p>
+                            <div className="flip-card aspect-[3/4] w-full max-w-[360px] mx-auto rounded-xl editorial-shadow cursor-pointer">
+                                <div className="flip-card-inner rounded-xl">
+                                    <div className="flip-card-front bg-surface-container-lowest flex flex-col rounded-xl overflow-hidden shadow-sm">
+                                        <div className="flex-1 bg-gradient-to-br from-[#2e7d32] to-[#1b5e20] relative overflow-hidden">
+                                            <img alt="Mr. Riyaj Pirjade" className="w-full h-full object-cover object-top" src="/Images/mr_riyaj.png" />
+                                        </div>
+                                        <div className="p-6 shrink-0 bg-surface-container-lowest text-center">
+                                            <h4 className="font-headline text-xl font-bold text-primary mb-1">Mr. Riyaj Pirjade</h4>
+                                            <p className="text-[#2e7d32] font-medium text-xs sm:text-sm uppercase tracking-wide">Director — ICOE</p>
+                                        </div>
+                                    </div>
+                                    <div className="flip-card-back bg-white rounded-xl p-6 sm:p-8 flex flex-col items-center justify-center text-center shadow-xl border-t-[6px] border-[#2e7d32]">
+                                        <h4 className="font-headline text-2xl sm:text-3xl font-bold text-primary mb-4">Mr. Riyaj Pirjade</h4>
+                                        <div className="w-12 h-1 bg-secondary-container mb-6"></div>
+                                        <p className="font-body text-sm sm:text-base leading-relaxed text-on-surface-variant">
+                                            Pursuing PhD in Social Innovation, MSW Community Development. Contributed to NITI Aayog projects, Savitribai Phule Pune University, SKF India & Symbiosis University CSR programs.
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>

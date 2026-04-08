@@ -38,7 +38,7 @@ const Footer = () => (
                     DR. DNYANESHWAR MULE FOUNDATION
                 </div>
                 <div className="text-[#fe9832] font-bold text-xs uppercase tracking-widest mb-4">
-                    DMF • Movement of Positivity (MOP)
+                    Movement of Positivity
                 </div>
                 <p className="text-gray-300 font-body leading-relaxed mb-6 text-sm">
                     Creating a society based on positivity, compassion and creativity.
@@ -61,11 +61,8 @@ const Footer = () => (
                     </h5>
                     <ul className="space-y-3">
                         <li><Link className="text-gray-300 hover:text-white transition-all hover:underline decoration-[#fe9832]" to="/">Home</Link></li>
-                        <li><Link className="text-gray-300 hover:text-white transition-all hover:underline decoration-[#fe9832]" to="/about">About DMF</Link></li>
-                        <li><Link className="text-gray-300 hover:text-white transition-all hover:underline decoration-[#fe9832]" to="/icoe">ICOE</Link></li>
-                        <li><Link className="text-gray-300 hover:text-white transition-all hover:underline decoration-[#fe9832]" to="/projects">Projects</Link></li>
-                        <li><Link className="text-gray-300 hover:text-white transition-all hover:underline decoration-[#fe9832]" to="/events">Events</Link></li>
-                        <li><Link className="text-gray-300 hover:text-white transition-all hover:underline decoration-[#fe9832]" to="/missions">Missions</Link></li>
+                        <li><Link className="text-gray-300 hover:text-white transition-all hover:underline decoration-[#fe9832]" to="/about">What We Are</Link></li>
+                        <li><Link className="text-gray-300 hover:text-white transition-all hover:underline decoration-[#fe9832]" to="/icoe">What We Do</Link></li>
                     </ul>
                 </div>
 

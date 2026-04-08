@@ -123,6 +123,45 @@ export default function Home() {
                     </div>
                 </section>
 
+
+
+                {/* ICOE Highlight Section */}
+                <section className="py-24 bg-surface-container-low px-8">
+                    <div className="max-w-7xl mx-auto">
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+                            <div>
+                                <span className="font-label text-secondary text-xs font-bold tracking-widest uppercase mb-3 block">New Initiative — September 2025</span>
+                                <h2 className="font-headline text-4xl md:text-5xl font-extrabold text-primary leading-tight mb-6">
+                                    International Centre<br />of <span className="text-secondary-container">Excellence</span>
+                                </h2>
+                                <p className="text-on-surface-variant leading-relaxed mb-4">
+                                    A collaborative initiative between <strong className="text-primary">Khadki Cantonment Board </strong> and <strong className="text-primary">DMF</strong>, focused on international placement, international skill development and foreign employment.
+                                </p>
+                                <p className="text-on-surface-variant leading-relaxed mb-8 text-sm">
+
+                                </p>
+                                <Link to="/icoe" className="inline-flex items-center gap-2 bg-primary text-white px-8 py-4 rounded-md font-headline text-xs font-bold tracking-widest hover:bg-primary-container transition-all">
+                                    EXPLORE ICOE <span className="material-symbols-outlined text-sm">arrow_forward</span>
+                                </Link>
+                            </div>
+                            <div className="grid grid-cols-2 gap-6">
+                                {[
+                                    { icon: 'flight_takeoff', title: "Int'l Placement", desc: '200+ for foreign placements', color: 'border-secondary-container' },
+                                    { icon: 'language', title: 'Foreign  Languages', desc: 'foreign language training', color: 'border-secondary-container' },
+
+                                    { icon: 'flight_takeoff', title: "Foreign Culture", desc: 'foreign culture programs', color: 'border-[#2e7d32]' },
+
+                                ].map((item, i) => (
+                                    <div key={i} className={`bg-surface-container-lowest p-6 rounded-xl border-l-4 ${item.color} shadow-sm hover:-translate-y-1 transition-all duration-300`}>
+                                        <span className="material-symbols-outlined text-primary text-3xl mb-3 block">{item.icon}</span>
+                                        <h4 className="font-headline font-bold text-primary text-base mb-1">{item.title}</h4>
+                                        <p className="text-on-surface-variant text-xs">{item.desc}</p>
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
+                    </div>
+                </section>
                 {/* Service Columns (Tonal Vertical Spines) */}
                 <section className="py-24 bg-surface px-8">
                     <div className="max-w-7xl mx-auto">
@@ -141,7 +180,6 @@ export default function Home() {
                                     <h3 className="font-headline text-3xl font-extrabold text-primary mb-4">POSITIVITY</h3>
                                     <p className="text-primary/80 font-medium mb-8 leading-relaxed">Building the Movement of Positivity (MOP) — fostering optimism, hope and constructive action in every community we serve.</p>
                                     <Link className="inline-flex items-center gap-2 font-headline text-xs font-black tracking-widest text-primary uppercase border-b-2 border-primary/20 hover:border-primary transition-all" to="/missions">
-                                        Learn More <span className="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
                                     </Link>
                                 </div>
                             </div>
@@ -155,7 +193,6 @@ export default function Home() {
                                     <h3 className="font-headline text-3xl font-extrabold text-primary mb-4">COMPASSION</h3>
                                     <p className="text-on-surface-variant font-medium mb-8 leading-relaxed">Advocating for the unheard — ensuring legal empowerment and equitable access to human rights for all citizens, especially the marginalized.</p>
                                     <Link className="inline-flex items-center gap-2 font-headline text-xs font-black tracking-widest text-primary uppercase border-b-2 border-primary/20 hover:border-primary transition-all" to="/missions">
-                                        Learn More <span className="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
                                     </Link>
                                 </div>
                             </div>
@@ -169,46 +206,8 @@ export default function Home() {
                                     <h3 className="font-headline text-3xl font-extrabold text-white mb-4">CREATIVITY</h3>
                                     <p className="text-white/80 font-medium mb-8 leading-relaxed">Bridging the socio-economic divide through innovative educational, economic, social and cultural programs for least privileged segments.</p>
                                     <Link className="inline-flex items-center gap-2 font-headline text-xs font-black tracking-widest text-white uppercase border-b-2 border-white/20 hover:border-white transition-all" to="/missions">
-                                        Learn More <span className="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
                                     </Link>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                {/* ICOE Highlight Section */}
-                <section className="py-24 bg-surface-container-low px-8">
-                    <div className="max-w-7xl mx-auto">
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
-                            <div>
-                                <span className="font-label text-secondary text-xs font-bold tracking-widest uppercase mb-3 block">New Initiative — September 2025</span>
-                                <h2 className="font-headline text-4xl md:text-5xl font-extrabold text-primary leading-tight mb-6">
-                                    International Centre<br />of <span className="text-secondary-container">Excellence</span>
-                                </h2>
-                                <p className="text-on-surface-variant leading-relaxed mb-4">
-                                    A collaborative initiative between <strong className="text-primary">Khadki Cantonment Board </strong> and <strong className="text-primary">DMF</strong>, focused on social innovation, skill development, entrepreneurship, and global employment.
-                                </p>
-                                <p className="text-on-surface-variant leading-relaxed mb-8 text-sm">
-                                    Programs include Foreign Language Training (German, Japanese), Digital Skills, Women's Entrepreneurship, Career Guidance, and International Job Placement.
-                                </p>
-                                <Link to="/icoe" className="inline-flex items-center gap-2 bg-primary text-white px-8 py-4 rounded-md font-headline text-xs font-bold tracking-widest hover:bg-primary-container transition-all">
-                                    EXPLORE ICOE <span className="material-symbols-outlined text-sm">arrow_forward</span>
-                                </Link>
-                            </div>
-                            <div className="grid grid-cols-2 gap-6">
-                                {[
-                                    { icon: 'language', title: 'Global Languages', desc: 'German (A1-B1) & Japanese training', color: 'border-secondary-container' },
-                                    { icon: 'devices', title: 'Digital Skills', desc: 'Excel, Digital Marketing, Tally Prime', color: 'border-primary' },
-                                    { icon: 'woman', title: "Women's Enterprise", desc: 'Sweet & Leather enterprise programs', color: 'border-[#2e7d32]' },
-                                    { icon: 'flight_takeoff', title: "Int'l Placement", desc: '200+ for Germany placements', color: 'border-secondary-container' },
-                                ].map((item, i) => (
-                                    <div key={i} className={`bg-surface-container-lowest p-6 rounded-xl border-l-4 ${item.color} shadow-sm hover:-translate-y-1 transition-all duration-300`}>
-                                        <span className="material-symbols-outlined text-primary text-3xl mb-3 block">{item.icon}</span>
-                                        <h4 className="font-headline font-bold text-primary text-base mb-1">{item.title}</h4>
-                                        <p className="text-on-surface-variant text-xs">{item.desc}</p>
-                                    </div>
-                                ))}
                             </div>
                         </div>
                     </div>
@@ -227,10 +226,10 @@ export default function Home() {
                     </div>
                     <div className="max-w-7xl mx-auto px-8 relative z-10">
                         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center md:text-left">
-                            <StatCounter num={500000} suffix="+" label="Beneficiaries"    colorClass="text-secondary-container" started={counterStarted} duration={5000} />
-                            <StatCounter num={10000}  suffix="+" label="ICOE Outreach"    colorClass="text-white"               started={counterStarted} duration={5000} />
-                            <StatCounter num={230}    suffix="+" label="Youth Enrolled"   colorClass="text-secondary-container" started={counterStarted} duration={5000} />
-                            <StatCounter num={200}    suffix="+" label="Int'l Placements" colorClass="text-white"               started={counterStarted} duration={5000} />
+                            <StatCounter num={500000} suffix="+" label="Beneficiaries" colorClass="text-secondary-container" started={counterStarted} duration={5000} />
+                            <StatCounter num={10000} suffix="+" label="ICOE Outreach" colorClass="text-white" started={counterStarted} duration={5000} />
+                            <StatCounter num={230} suffix="+" label="Youth Enrolled" colorClass="text-secondary-container" started={counterStarted} duration={5000} />
+                            <StatCounter num={200} suffix="+" label="Int'l Placements" colorClass="text-white" started={counterStarted} duration={5000} />
                         </div>
                     </div>
                 </section>
@@ -256,8 +255,8 @@ export default function Home() {
                                     <div className="absolute inset-0 bg-gradient-to-t from-primary/90 via-transparent to-transparent"></div>
                                     <div className="absolute bottom-0 left-0 p-10">
                                         <span className="bg-secondary-container text-on-secondary-container px-3 py-1 text-[10px] font-black tracking-widest uppercase mb-4 inline-block">Education</span>
-                                        <h4 className="text-3xl font-headline font-bold text-white mb-2">Digital Classrooms &amp; Innovation Labs</h4>
-                                        <p className="text-white/70 max-w-md">Transforming Rural &amp; Urban Education through Digital Classrooms — deploying tech infrastructure in underserved communities.</p>
+                                        <h4 className="text-3xl font-headline font-bold text-white mb-2">Classrooms &amp; Innovation Labs</h4>
+
                                     </div>
                                 </div>
                             </div>
