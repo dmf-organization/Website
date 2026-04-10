@@ -37,7 +37,7 @@ const Footer = () => (
                 <img
                     src="/logo/dmfmop_logo.png"
                     alt="DMF - Movement of Positivity"
-                    className="h-16 w-auto object-contain mb-4"
+                    className="h-24 w-auto object-contain mb-4"
                 />
                 <p className="text-gray-300 font-body leading-relaxed mb-6 text-sm">
                     Creating a society based on positivity, compassion and creativity.

@@ -20,7 +20,7 @@ const Navbar = () => {
                 <img
                     src="/logo/dmfmop_logo.png"
                     alt="DMF - Movement of Positivity"
-                    className="h-12 w-auto object-contain drop-shadow-[0_2px_4px_rgba(0,0,0,0.6)]"
+                    className="h-16 w-auto object-contain drop-shadow-[0_2px_4px_rgba(0,0,0,0.6)]"
                 />
                 <div className="flex items-center gap-6">
                     <div className="hidden md:flex items-center gap-6">
@@ -42,11 +42,8 @@ const Navbar = () => {
             {menuOpen && (
                 <div className="md:hidden bg-primary/95 backdrop-blur-xl border-t border-white/10 px-6 py-6 flex flex-col gap-4">
                     <Link className={getLinkClass('/')} to="/" onClick={() => setMenuOpen(false)}>Home</Link>
-                    <Link className={getLinkClass('/about')} to="/about" onClick={() => setMenuOpen(false)}>About</Link>
-                    <Link className={getLinkClass('/icoe')} to="/icoe" onClick={() => setMenuOpen(false)}>ICOE</Link>
-                    <Link className={getLinkClass('/projects')} to="/projects" onClick={() => setMenuOpen(false)}>Projects</Link>
-                    <Link className={getLinkClass('/events')} to="/events" onClick={() => setMenuOpen(false)}>Events</Link>
-                    <Link className={getLinkClass('/missions')} to="/missions" onClick={() => setMenuOpen(false)}>Missions</Link>
+                    <Link className={getLinkClass('/about')} to="/about" onClick={() => setMenuOpen(false)}>What we are</Link>
+                    <Link className={getLinkClass('/icoe')} to="/icoe" onClick={() => setMenuOpen(false)}>What we do</Link>
                     <Link className={getLinkClass('/media')} to="/media" onClick={() => setMenuOpen(false)}>Media</Link>
                 </div>
             )}

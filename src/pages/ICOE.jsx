@@ -13,46 +13,12 @@ export default function ICOE() {
                         <img
                             alt="ICOE Khadki Cantonment Board"
                             className="w-full h-full object-cover"
-                            src="/Images/1.png"
+                            src="/Images/icoe_page.png"
                         />
 
                     </div>
-                    <div className="relative z-10 max-w-7xl mx-auto px-8 w-full pt-24">
-                        <div className="max-w-3xl">
-                            <span className="inline-flex items-center gap-3 px-4 py-2 mb-6 bg-secondary-container/20 border border-secondary-container/40 text-secondary-container text-xs font-bold tracking-widest uppercase rounded-full">
-                                ICOE-KCB-DMF
-                            </span>
-                            <h1 className="font-headline text-5xl md:text-6xl font-extrabold text-white leading-[1.1] mb-6 tracking-tighter">
-                                International Centre<br />
-                                <span className="text-secondary-container">of Excellence</span>
-                            </h1>
-                            <p className="text-xl text-white/80 mb-4 leading-relaxed font-medium max-w-2xl">
-                                A collaborative initiative between <strong className="text-white">Khadki Cantonment Board</strong> and <strong className="text-white">Dr. Dnyaneshwar Mulay Foundation</strong>, established September 2025.
-                            </p>
 
-                            <div className="flex flex-wrap gap-4">
-                                <a href="#about" className="px-8 py-4 bg-gradient-to-r from-[#fe9832] to-secondary-container text-white font-headline font-bold rounded-md tracking-widest shadow-2xl hover:scale-105 transition-transform uppercase text-sm">
-                                    Explore ICOE
-                                </a>
-                                <a href="#team" className="px-8 py-4 border border-white/30 text-white font-headline font-bold rounded-md tracking-widest hover:bg-white/10 transition-colors uppercase text-sm">
-                                    Meet Our Team
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    {/* Floating Stats */}
-                    <div className="absolute bottom-8 right-8 hidden lg:grid grid-cols-3 gap-4">
-                        {[
-                            { num: '10,000+', label: 'Beneficiaries' },
-                            { num: '230+', label: 'Youth Enrolled' },
-                            { num: '2025', label: 'Est. Year' },
-                        ].map((s, i) => (
-                            <div key={i} className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-5 text-center">
-                                <div className="font-headline text-2xl font-black text-secondary-container">{s.num}</div>
-                                <div className="text-white/70 text-xs uppercase tracking-wide mt-1">{s.label}</div>
-                            </div>
-                        ))}
-                    </div>
+
                 </section>
 
                 {/* About ICOE */}
@@ -121,7 +87,7 @@ export default function ICOE() {
                     <div className="max-w-7xl mx-auto relative z-10">
                         <div className="text-center mb-16">
                             <span className="font-label text-secondary-container text-xs font-bold tracking-widest uppercase mb-3 block">DMF Core Initiative</span>
-                            <h2 className="font-headline text-4xl font-extrabold text-white mb-4">Movement of Positivity</h2>
+                            <h2 className="font-headline text-4xl font-extrabold text-white mb-4">Movement of Positivity / चांगुल पणाची चळवळ / अच्छाई का अभियान</h2>
                             <div className="w-16 h-1 bg-secondary-container mx-auto mb-6"></div>
                             <p className="text-white/70 max-w-3xl mx-auto leading-relaxed">
                                 The Movement of Positivity is the beating heart of the Dr. Dnyaneshwar Mule Foundation — a values-driven initiative that fosters optimism, ethical leadership, and constructive community action across India.
@@ -336,7 +302,7 @@ export default function ICOE() {
                             <div>
                                 <span className="font-label text-secondary text-xs font-bold tracking-widest uppercase mb-3 block">DMF Initiative</span>
                                 <h2 className="font-headline text-4xl font-extrabold text-primary leading-tight mb-4">
-                                    She Leads — <span className="text-[#2e7d32]">{"Women's Leadership Programme"}</span>
+                                    She Leads — <span className="text-[#2e7d32]">{"Women's Enterpreneurship Programme"}</span>
                                 </h2>
                                 <div className="w-16 h-1 bg-[#2e7d32] mb-8"></div>
                                 <p className="text-on-surface-variant leading-relaxed mb-6">
@@ -573,71 +539,7 @@ export default function ICOE() {
                     </div>
                 </section>
 
-                {/* Partner Institutions */}
-                <section className="py-20 bg-primary relative overflow-hidden">
-                    <div className="absolute inset-0 opacity-5 pointer-events-none" style={{ backgroundImage: 'radial-gradient(#ffffff 0.5px, transparent 0.5px)', backgroundSize: '24px 24px' }}></div>
-                    <div className="relative z-10">
-                        <div className="text-center mb-14 px-8">
-                            <span className="font-label text-secondary-container text-xs font-bold tracking-widest uppercase mb-3 block">Ecosystem</span>
-                            <h2 className="font-headline text-4xl font-extrabold text-white mb-4">Partner Institutions &amp; Collaborators</h2>
-                            <div className="w-16 h-1 bg-secondary-container mx-auto"></div>
-                        </div>
 
-                        {/* Marquee wrapper — fade edges */}
-                        <div
-                            className="relative overflow-hidden"
-                            style={{
-                                maskImage: 'linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%)',
-                                WebkitMaskImage: 'linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%)',
-                            }}
-                        >
-                            <div
-                                style={{
-                                    display: 'flex',
-                                    gap: '2rem',
-                                    width: 'max-content',
-                                    animation: 'marquee-rtl 40s linear infinite',
-                                    paddingBlock: '1rem',
-                                }}
-                            >
-                                {[...Array(2)].flatMap((_, pass) =>
-                                    [
-                                        { logo: '/logo/KCB.png', name: 'Khadki Cantonment Board' },
-                                        { logo: '/logo/Ministry_of_defence.png', name: 'Ministry of Defence' },
-                                        { logo: '/logo/niti-aayog-logo-vector.png', name: 'NITI Aayog' },
-                                        { logo: '/logo/nsdc.png', name: 'NSDC' },
-                                        { logo: '/logo/coep.png', name: 'COEP' },
-                                        { logo: '/logo/Savitribai_Phule_Pune_University_Logo.png', name: 'SPPU' },
-                                    ].map((p, i) => (
-                                        <div
-                                            key={`${pass}-${i}`}
-                                            className="group flex flex-col items-center gap-4 flex-shrink-0"
-                                            style={{ width: '192px' }}
-                                        >
-                                            <div className="bg-white rounded-2xl p-5 w-full h-36 flex items-center justify-center shadow-xl group-hover:-translate-y-2 transition-all duration-300">
-                                                <img
-                                                    src={p.logo}
-                                                    alt={p.name}
-                                                    className="max-h-full max-w-full object-contain transition-transform duration-300 group-hover:scale-110"
-                                                />
-                                            </div>
-                                            <div className="text-white/70 text-[10px] uppercase tracking-widest font-black text-center group-hover:text-secondary-container transition-colors px-2">
-                                                {p.name}
-                                            </div>
-                                        </div>
-                                    ))
-                                )}
-                            </div>
-                        </div>
-                    </div>
-
-                    <style>{`
-                        @keyframes marquee-rtl {
-                            0%   { transform: translateX(0); }
-                            100% { transform: translateX(-50%); }
-                        }
-                    `}</style>
-                </section>
 
                 {/* ── Social Innovation Path ─────────────────────────────── */}
                 <section id="social-innovation-path" className="py-24 bg-surface px-8">
@@ -705,118 +607,73 @@ export default function ICOE() {
                     </div>
                 </section>
 
-
-                {/* ── Centre of Excellence — 4 Key Programs ──────────────── */}
-                <section className="py-24 bg-surface-container-low px-8">
-                    <div className="max-w-7xl mx-auto">
-                        <div className="text-center mb-16">
-                            <span className="font-label text-secondary text-xs font-bold tracking-widest uppercase mb-3 block">Centre of Excellence</span>
-                            <h2 className="font-headline text-4xl font-extrabold text-primary mb-4">High-Impact Programs</h2>
-                            <div className="w-16 h-1 bg-secondary-container mx-auto mb-6"></div>
-                            <p className="text-on-surface-variant max-w-3xl mx-auto leading-relaxed">
-                                Dr. Dnyaneshwar Mule Foundation delivers future-focused programs designed to empower youth, women, and institutions through skill development, innovation, and global opportunities — aligned with national priorities and global workforce demands.
-                            </p>
+                {/* Partner Institutions */}
+                <section className="py-20 bg-primary relative overflow-hidden">
+                    <div className="absolute inset-0 opacity-5 pointer-events-none" style={{ backgroundImage: 'radial-gradient(#ffffff 0.5px, transparent 0.5px)', backgroundSize: '24px 24px' }}></div>
+                    <div className="relative z-10">
+                        <div className="text-center mb-14 px-8">
+                            <span className="font-label text-secondary-container text-xs font-bold tracking-widest uppercase mb-3 block">Ecosystem</span>
+                            <h2 className="font-headline text-4xl font-extrabold text-white mb-4">Partner Institutions &amp; Collaborators</h2>
+                            <div className="w-16 h-1 bg-secondary-container mx-auto"></div>
                         </div>
 
-                        <div className="space-y-12">
-                            {/* Program 1 — International Job Readiness */}
-                            <div className="bg-surface-container-lowest rounded-2xl overflow-hidden shadow-lg">
-                                <div className="grid grid-cols-1 md:grid-cols-12">
-                                    <div className="md:col-span-4 bg-primary p-10 flex flex-col justify-center">
-                                        <div className="w-12 h-12 bg-secondary-container rounded-xl flex items-center justify-center font-headline font-black text-2xl text-on-secondary-container mb-4">1</div>
-                                        <h3 className="font-headline text-2xl font-extrabold text-white mb-2">International Job Readiness Program</h3>
-                                        <p className="text-white/60 text-sm italic">Preparing a globally competent workforce</p>
-                                    </div>
-                                    <div className="md:col-span-8 p-10 space-y-6">
-                                        <p className="text-on-surface-variant leading-relaxed">Prepares candidates for global employment by equipping them with industry-relevant skills, cultural competencies, and professional readiness for international industries such as healthcare, manufacturing, construction, and services.</p>
-                                        <div>
-                                            <h4 className="font-headline font-bold text-primary mb-3 flex items-center gap-2"><span className="material-symbols-outlined text-secondary-container">list_alt</span> Key Components</h4>
-                                            <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
-                                                {['Language and communication training', 'Technical and domain-specific skill development', 'Pre-departure orientation (culture, workplace ethics, legal awareness)', 'Soft skills and personality development', 'Placement support through international partnerships'].map((c, i) => (
-                                                    <div key={i} className="flex items-start gap-2 text-sm text-on-surface-variant px-3 py-2 bg-surface-container-low rounded-lg">
-                                                        <span className="material-symbols-outlined text-primary text-sm mt-0.5">check</span>{c}
-                                                    </div>
-                                                ))}
+                        {/* Marquee wrapper — fade edges */}
+                        <div
+                            className="relative overflow-hidden"
+                            style={{
+                                maskImage: 'linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%)',
+                                WebkitMaskImage: 'linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%)',
+                            }}
+                        >
+                            <div
+                                style={{
+                                    display: 'flex',
+                                    gap: '2rem',
+                                    width: 'max-content',
+                                    animation: 'marquee-rtl 40s linear infinite',
+                                    paddingBlock: '1rem',
+                                }}
+                            >
+                                {[...Array(2)].flatMap((_, pass) =>
+                                    [
+                                        { logo: '/logo/KCB.png', name: 'Khadki Cantonment Board' },
+                                        { logo: '/logo/Ministry_of_defence.png', name: 'Ministry of Defence' },
+                                        { logo: '/logo/niti-aayog-logo-vector.png', name: 'NITI Aayog' },
+                                        { logo: '/logo/nsdc.png', name: 'NSDC' },
+                                        { logo: '/logo/coep.png', name: 'COEP' },
+                                        { logo: '/logo/Savitribai_Phule_Pune_University_Logo.png', name: 'SPPU' },
+                                    ].map((p, i) => (
+                                        <div
+                                            key={`${pass}-${i}`}
+                                            className="group flex flex-col items-center gap-4 flex-shrink-0"
+                                            style={{ width: '192px' }}
+                                        >
+                                            <div className="bg-white rounded-2xl p-5 w-full h-36 flex items-center justify-center shadow-xl group-hover:-translate-y-2 transition-all duration-300">
+                                                <img
+                                                    src={p.logo}
+                                                    alt={p.name}
+                                                    className="max-h-full max-w-full object-contain transition-transform duration-300 group-hover:scale-110"
+                                                />
+                                            </div>
+                                            <div className="text-white/70 text-[10px] uppercase tracking-widest font-black text-center group-hover:text-secondary-container transition-colors px-2">
+                                                {p.name}
                                             </div>
                                         </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            {/* Program 2 — Entrepreneurship Cum Skill Development */}
-                            <div className="bg-surface-container-lowest rounded-2xl overflow-hidden shadow-lg">
-                                <div className="grid grid-cols-1 md:grid-cols-12">
-                                    <div className="md:col-span-4 bg-[#2e7d32] p-10 flex flex-col justify-center">
-                                        <div className="w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center font-headline font-black text-2xl text-white mb-4">2</div>
-                                        <h3 className="font-headline text-2xl font-extrabold text-white mb-2">Entrepreneurship Cum Skill Development</h3>
-                                        <p className="text-white/60 text-sm italic">Fostering local enterprise and jobs</p>
-                                    </div>
-                                    <div className="md:col-span-8 p-10 space-y-6">
-                                        <p className="text-on-surface-variant leading-relaxed">Fosters entrepreneurship while building employable skills among youth — leading to creation of sustainable micro and small enterprises, job creation, and local economic development.</p>
-                                        <div>
-                                            <h4 className="font-headline font-bold text-primary mb-3 flex items-center gap-2"><span className="material-symbols-outlined text-[#2e7d32]">list_alt</span> Key Components</h4>
-                                            <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
-                                                {['Skill-based training aligned with local market needs', 'Entrepreneurship development modules (business planning, finance, marketing)', 'Mentorship and incubation support', 'Access to credit linkages and government schemes', 'Market linkage and enterprise support'].map((c, i) => (
-                                                    <div key={i} className="flex items-start gap-2 text-sm text-on-surface-variant px-3 py-2 bg-surface-container-low rounded-lg">
-                                                        <span className="material-symbols-outlined text-[#2e7d32] text-sm mt-0.5">check</span>{c}
-                                                    </div>
-                                                ))}
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            {/* Program 3 — Women Entrepreneurship */}
-                            <div className="bg-surface-container-lowest rounded-2xl overflow-hidden shadow-lg">
-                                <div className="grid grid-cols-1 md:grid-cols-12">
-                                    <div className="md:col-span-4 bg-secondary-container p-10 flex flex-col justify-center">
-                                        <div className="w-12 h-12 bg-white/30 rounded-xl flex items-center justify-center font-headline font-black text-2xl text-on-secondary-container mb-4">3</div>
-                                        <h3 className="font-headline text-2xl font-extrabold text-on-secondary-container mb-2">Women Entrepreneurship Development</h3>
-                                        <p className="text-on-secondary-container/60 text-sm italic">Empowering women economically &amp; socially</p>
-                                    </div>
-                                    <div className="md:col-span-8 p-10 space-y-6">
-                                        <p className="text-on-surface-variant leading-relaxed">Enhances financial independence of women, increasing their participation in economic activities, especially in rural and underserved communities — through SHGs, digital literacy, and market access.</p>
-                                        <div>
-                                            <h4 className="font-headline font-bold text-primary mb-3 flex items-center gap-2"><span className="material-symbols-outlined text-secondary-container">list_alt</span> Key Components</h4>
-                                            <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
-                                                {['Capacity building and entrepreneurial training', 'Formation and strengthening of Self-Help Groups (SHGs)', 'Financial literacy and access to credit', 'Product development, branding, and marketing support', 'Digital literacy and e-commerce integration'].map((c, i) => (
-                                                    <div key={i} className="flex items-start gap-2 text-sm text-on-surface-variant px-3 py-2 bg-surface-container-low rounded-lg">
-                                                        <span className="material-symbols-outlined text-secondary-container text-sm mt-0.5">check</span>{c}
-                                                    </div>
-                                                ))}
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            {/* Program 4 — Social Innovation Academia */}
-                            <div className="bg-surface-container-lowest rounded-2xl overflow-hidden shadow-lg">
-                                <div className="grid grid-cols-1 md:grid-cols-12">
-                                    <div className="md:col-span-4 bg-primary p-10 flex flex-col justify-center">
-                                        <div className="w-12 h-12 bg-secondary-container rounded-xl flex items-center justify-center font-headline font-black text-2xl text-on-secondary-container mb-4">4</div>
-                                        <h3 className="font-headline text-2xl font-extrabold text-white mb-2">Social Innovation – Academia Development</h3>
-                                        <p className="text-white/60 text-sm italic">Bridging academia and real-world impact</p>
-                                    </div>
-                                    <div className="md:col-span-8 p-10 space-y-6">
-                                        <p className="text-on-surface-variant leading-relaxed">Bridges the gap between academic learning and real-world problem-solving — developing socially responsible innovators and scalable solutions addressing challenges in education, health, environment, and governance.</p>
-                                        <div>
-                                            <h4 className="font-headline font-bold text-primary mb-3 flex items-center gap-2"><span className="material-symbols-outlined text-secondary-container">list_alt</span> Key Components</h4>
-                                            <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
-                                                {['Establishment of Social Innovation Labs in colleges and universities', 'Interdisciplinary project-based learning on real-world challenges', 'Collaboration with government, CSR, and industry partners', 'Mentorship from experts and practitioners', 'Research, prototyping, and scaling of innovative solutions'].map((c, i) => (
-                                                    <div key={i} className="flex items-start gap-2 text-sm text-on-surface-variant px-3 py-2 bg-surface-container-low rounded-lg">
-                                                        <span className="material-symbols-outlined text-primary text-sm mt-0.5">check</span>{c}
-                                                    </div>
-                                                ))}
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                                    ))
+                                )}
                             </div>
                         </div>
                     </div>
+
+                    <style>{`
+                        @keyframes marquee-rtl {
+                            0%   { transform: translateX(0); }
+                            100% { transform: translateX(-50%); }
+                        }
+                    `}</style>
                 </section>
+
+
 
 
                 {/* ── Orphanage Support Programme ─────────────────────────── */}

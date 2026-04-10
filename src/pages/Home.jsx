@@ -44,6 +44,20 @@ export default function Home() {
     const counterRef = useRef(null);
     const [counterStarted, setCounterStarted] = useState(false);
 
+    const [currentSlide, setCurrentSlide] = useState(0);
+    const slideImages = [
+        "/Images/home_page_slide_image_1.jpeg",
+        "/Images/home_page_slide_image_2.jpeg",
+        "/Images/home_page_slide_image_3.jpeg"
+    ];
+
+    useEffect(() => {
+        const slideTimer = setInterval(() => {
+            setCurrentSlide((prev) => (prev + 1) % slideImages.length);
+        }, 3500);
+        return () => clearInterval(slideTimer);
+    }, []);
+
     useEffect(() => {
         /* Small delay ensures browser finishes initial layout so the observer
            does NOT fire immediately on page load for off-screen elements */
@@ -106,21 +120,44 @@ export default function Home() {
                                     Since 2019, DMF is a globally recognized organization with deep roots in India, committed to providing innovative and beneficial solutions. During flood emergencies in Kolhapur Sangali district in Maharashtra, and subsequently during COVID-19, DMF strengthened its work and today conducts significant activities contributing to social change.
                                 </p>
                                 <p className="text-on-surface-variant leading-relaxed text-sm">
-                                    <strong className="text-primary">Dr. Dnyaneshwar Mule</strong> is the Founder &amp; President of DMF. The non-profit specializes in Social Innovation, Urban &amp; Rural mobilization, Capacity (skill) building, and Transforming Rural &amp; Urban Education Through Digital Classrooms and Innovation Labs.
+                                    <strong className="text-primary">Dr. Dnyaneshwar Mulay</strong> is the Founder &amp; President of DMF. The non-profit specializes in Social Innovation, Urban &amp; Rural mobilization, Capacity (skill) building, and Transforming Rural &amp; Urban Education Through Digital Classrooms and Innovation Labs.
                                 </p>
                             </div>
-                            <div className="grid grid-cols-2 gap-4">
-                                {[
-                                    { num: '500K+', label: 'Beneficiaries', color: 'bg-primary text-white' },
-                                    { num: '2019', label: 'Founded', color: 'bg-secondary-container text-on-secondary-container' },
-                                    { num: '10K+', label: 'ICOE Reached', color: 'bg-[#2e7d32] text-white' },
-                                    { num: '230+', label: 'Youth Enrolled', color: 'bg-surface-container-lowest text-primary border border-outline-variant' },
-                                ].map((s, i) => (
-                                    <div key={i} className={`${s.color} rounded-xl p-5 text-center shadow-sm`}>
-                                        <div className="font-headline text-2xl font-black">{s.num}</div>
-                                        <div className="text-xs uppercase tracking-wider opacity-80 mt-1">{s.label}</div>
-                                    </div>
+                            <div className="relative aspect-[4/3] w-full overflow-hidden rounded-xl shadow-lg group bg-surface-container-lowest">
+                                {slideImages.map((src, idx) => (
+                                    <img
+                                        key={idx}
+                                        src={src}
+                                        alt={`Slide ${idx + 1}`}
+                                        className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ${idx === currentSlide ? 'opacity-100' : 'opacity-0'
+                                            }`}
+                                    />
                                 ))}
+
+                                {/* Navigation Arrows */}
+                                <button
+                                    onClick={() => setCurrentSlide((prev) => (prev - 1 + slideImages.length) % slideImages.length)}
+                                    className="absolute left-4 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-black/30 hover:bg-black/60 text-white flex items-center justify-center backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-all z-20"
+                                >
+                                    <span className="material-symbols-outlined font-bold">chevron_left</span>
+                                </button>
+                                <button
+                                    onClick={() => setCurrentSlide((prev) => (prev + 1) % slideImages.length)}
+                                    className="absolute right-4 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-black/30 hover:bg-black/60 text-white flex items-center justify-center backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-all z-20"
+                                >
+                                    <span className="material-symbols-outlined font-bold">chevron_right</span>
+                                </button>
+
+                                <div className="absolute inset-x-0 bottom-0 py-4 bg-gradient-to-t from-black/60 to-transparent flex justify-center gap-2 z-10">
+                                    {slideImages.map((_, idx) => (
+                                        <button
+                                            key={idx}
+                                            onClick={() => setCurrentSlide(idx)}
+                                            className={`w-2.5 h-2.5 rounded-full transition-all ${idx === currentSlide ? 'bg-[#fe9832] scale-125' : 'bg-white/60 hover:bg-white'
+                                                }`}
+                                        />
+                                    ))}
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -128,43 +165,7 @@ export default function Home() {
 
 
 
-                {/* ICOE Highlight Section */}
-                <section className="py-24 bg-surface-container-low px-8">
-                    <div className="max-w-7xl mx-auto">
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
-                            <div>
-                                <span className="font-label text-secondary text-xs font-bold tracking-widest uppercase mb-3 block">New Initiative — September 2025</span>
-                                <h2 className="font-headline text-4xl md:text-5xl font-extrabold text-primary leading-tight mb-6">
-                                    International Centre<br />of <span className="text-secondary-container">Excellence</span>
-                                </h2>
-                                <p className="text-on-surface-variant leading-relaxed mb-4">
-                                    A collaborative initiative between <strong className="text-primary">Khadki Cantonment Board </strong> and <strong className="text-primary">DMF</strong>, focused on international placement, international skill development and foreign employment.
-                                </p>
-                                <p className="text-on-surface-variant leading-relaxed mb-8 text-sm">
 
-                                </p>
-                                <Link to="/icoe" className="inline-flex items-center gap-2 bg-primary text-white px-8 py-4 rounded-md font-headline text-xs font-bold tracking-widest hover:bg-primary-container transition-all">
-                                    EXPLORE ICOE <span className="material-symbols-outlined text-sm">arrow_forward</span>
-                                </Link>
-                            </div>
-                            <div className="grid grid-cols-2 gap-6">
-                                {[
-                                    { icon: 'flight_takeoff', title: "Int'l Placement", desc: '200+ for foreign placements', color: 'border-secondary-container' },
-                                    { icon: 'language', title: 'Foreign  Languages', desc: 'foreign language training', color: 'border-secondary-container' },
-
-                                    { icon: 'flight_takeoff', title: "Foreign Culture", desc: 'foreign culture programs', color: 'border-[#2e7d32]' },
-
-                                ].map((item, i) => (
-                                    <div key={i} className={`bg-surface-container-lowest p-6 rounded-xl border-l-4 ${item.color} shadow-sm hover:-translate-y-1 transition-all duration-300`}>
-                                        <span className="material-symbols-outlined text-primary text-3xl mb-3 block">{item.icon}</span>
-                                        <h4 className="font-headline font-bold text-primary text-base mb-1">{item.title}</h4>
-                                        <p className="text-on-surface-variant text-xs">{item.desc}</p>
-                                    </div>
-                                ))}
-                            </div>
-                        </div>
-                    </div>
-                </section>
                 {/* Service Columns (Tonal Vertical Spines) */}
                 <section className="py-24 bg-surface px-8">
                     <div className="max-w-7xl mx-auto">
@@ -173,41 +174,41 @@ export default function Home() {
                             <h2 className="font-headline text-4xl font-bold text-primary">Creating a Society Based on</h2>
                         </div>
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
-                            {/* Positivity Column */}
+                            {/* Positivity Column (MOP) */}
                             <div className="relative bg-secondary-container p-12 rounded-xl group hover:-translate-y-2 transition-all duration-500 shadow-xl overflow-hidden">
                                 <div className="absolute top-0 right-0 p-8 opacity-10 scale-150">
                                     <span className="material-symbols-outlined text-8xl" data-icon="sunny">sunny</span>
                                 </div>
                                 <div className="relative z-10">
                                     <span className="material-symbols-outlined text-primary text-5xl mb-6 block" data-icon="sentiment_very_satisfied">sentiment_very_satisfied</span>
-                                    <h3 className="font-headline text-3xl font-extrabold text-primary mb-4">POSITIVITY</h3>
-                                    <p className="text-primary/80 font-medium mb-8 leading-relaxed">Building the Movement of Positivity (MOP) — fostering optimism, hope and constructive action in every community we serve.</p>
+                                    <h3 className="font-headline text-3xl font-extrabold text-primary mb-4">MOVEMENT OF POSITIVITY</h3>
+                                    <p className="text-primary/80 font-medium mb-8 leading-relaxed">Movement of Positivity (MOP) — building a network of active citizens to foster optimism, hope, and constructive action in every community we serve.</p>
                                     <Link className="inline-flex items-center gap-2 font-headline text-xs font-black tracking-widest text-primary uppercase border-b-2 border-primary/20 hover:border-primary transition-all" to="/missions">
                                     </Link>
                                 </div>
                             </div>
-                            {/* Compassion Column */}
+                            {/* Compassion Column (ICOE) */}
                             <div className="relative bg-surface-container-lowest p-12 rounded-xl group hover:-translate-y-2 transition-all duration-500 shadow-xl border border-outline-variant/10">
                                 <div className="absolute top-0 right-0 p-8 opacity-10 scale-150 text-primary">
                                     <span className="material-symbols-outlined text-8xl" data-icon="favorite">favorite</span>
                                 </div>
                                 <div className="relative z-10">
-                                    <span className="material-symbols-outlined text-primary text-5xl mb-6 block" data-icon="favorite">favorite</span>
-                                    <h3 className="font-headline text-3xl font-extrabold text-primary mb-4">COMPASSION</h3>
-                                    <p className="text-on-surface-variant font-medium mb-8 leading-relaxed">Advocating for the unheard — ensuring legal empowerment and equitable access to human rights for all citizens, especially the marginalized.</p>
+                                    <span className="material-symbols-outlined text-primary text-5xl mb-6 block" data-icon="school">school</span>
+                                    <h3 className="font-headline text-3xl font-extrabold text-primary mb-4">ICOE</h3>
+                                    <p className="text-on-surface-variant font-medium mb-8 leading-relaxed">International Centre of Excellence — a collaborative initiative focused on international placement, skill development, and foreign employment.</p>
                                     <Link className="inline-flex items-center gap-2 font-headline text-xs font-black tracking-widest text-primary uppercase border-b-2 border-primary/20 hover:border-primary transition-all" to="/missions">
                                     </Link>
                                 </div>
                             </div>
-                            {/* Creativity Column */}
+                            {/* Creativity Column (Words Beyond Borders) */}
                             <div className="relative bg-[#2e7d32] p-12 rounded-xl group hover:-translate-y-2 transition-all duration-500 shadow-xl overflow-hidden">
                                 <div className="absolute top-0 right-0 p-8 opacity-10 scale-150 text-white">
                                     <span className="material-symbols-outlined text-8xl" data-icon="diversity_3">diversity_3</span>
                                 </div>
                                 <div className="relative z-10">
-                                    <span className="material-symbols-outlined text-white text-5xl mb-6 block" data-icon="palette">palette</span>
-                                    <h3 className="font-headline text-3xl font-extrabold text-white mb-4">CREATIVITY</h3>
-                                    <p className="text-white/80 font-medium mb-8 leading-relaxed">Bridging the socio-economic divide through innovative educational, economic, social and cultural programs for least privileged segments.</p>
+                                    <span className="material-symbols-outlined text-white text-5xl mb-6 block" data-icon="auto_stories">auto_stories</span>
+                                    <h3 className="font-headline text-3xl font-extrabold text-white mb-4">WORDS BEYOND BORDERS</h3>
+                                    <p className="text-white/80 font-medium mb-8 leading-relaxed">Words Beyond Borders — an international literary gathering celebrating diplomats who enrich the world of literature across diverse cultural landscapes.</p>
                                     <Link className="inline-flex items-center gap-2 font-headline text-xs font-black tracking-widest text-white uppercase border-b-2 border-white/20 hover:border-white transition-all" to="/missions">
                                     </Link>
                                 </div>
@@ -246,7 +247,6 @@ export default function Home() {
                                 <h2 className="text-xs font-headline font-black text-secondary tracking-[0.3em] uppercase mb-4">Our Initiatives</h2>
                                 <p className="font-headline text-4xl md:text-5xl font-extrabold text-primary leading-tight">Catalyzing systemic change through action.</p>
                             </div>
-                            <Link to="/projects" className="bg-primary text-white px-8 py-4 rounded-md font-headline text-xs font-bold tracking-widest hover:bg-primary-container transition-all">VIEW ALL PROJECTS</Link>
                         </div>
 
                         {/* Two images side-by-side */}
@@ -285,7 +285,7 @@ export default function Home() {
                                     <span className="material-symbols-outlined text-white text-sm">person</span>
                                 </div>
                                 <div>
-                                    <p className="text-xs font-bold text-primary">Dr. Dnyaneshwar Mule</p>
+                                    <p className="text-xs font-bold text-primary">Dr. Dnyaneshwar Mulay</p>
                                     <p className="text-[10px] text-on-surface-variant uppercase tracking-tighter">Founder &amp; President, DMF</p>
                                 </div>
                             </div>

@@ -4,29 +4,35 @@ import { Link } from 'react-router-dom';
 /* ─── Data ────────────────────────────────────────────────────────────── */
 
 const MEDIA_ITEMS = [
-    { category: 'Events',      src: '/Images/about_page_1.png', title: 'ICOE Inauguration — Khadki, Pune',            date: 'September 2025' },
-    { category: 'Community',   src: '/Images/about_page_2.png', title: 'Community Mobilization Drive',                date: 'October 2025'   },
-    { category: 'Events',      src: '/Images/about_page_3.png', title: 'Dr. Mule Addresses Youth Leaders',            date: 'November 2025'  },
-    { category: 'Programmes',  src: '/Images/about_page_4.png', title: 'She Leads — Women Enterprise Workshop',       date: 'November 2025'  },
-    { category: 'Community',   src: '/Images/about_page_5.png', title: 'SkillReach Language Training Batch',          date: 'December 2025'  },
-    { category: 'Programmes',  src: '/Images/2.png',            title: 'Digital Classrooms & Innovation Labs',        date: 'January 2026'   },
-    { category: 'Events',      src: '/Images/3.png',            title: 'International Business Expo — Pune',          date: 'February 2026'  },
-    { category: 'Programmes',  src: '/Images/4.png',            title: 'Smart Education Initiative Launch',           date: 'March 2026'     },
-    { category: 'Community',   src: '/Images/5.png',            title: 'Healthcare Outreach — Khadki Cantonment',     date: 'March 2026'     },
-    { category: 'Events',      src: '/Images/about_page_1.png', title: 'Annual Review & Strategy Summit — DMF',       date: 'January 2026'   },
-    { category: 'Programmes',  src: '/Images/about_page_4.png', title: 'German Language Batch A2 Completion Ceremony',date: 'February 2026'  },
-    { category: 'Community',   src: '/Images/about_page_2.png', title: 'Flood Relief Distribution — Sangli District', date: 'August 2020'    },
+    { category: 'Events', src: '/Images/about_page_1.png', title: 'ICOE Inauguration — Khadki, Pune', date: 'September 2025' },
+    { category: 'Community', src: '/Images/about_page_2.png', title: 'Community Mobilization Drive', date: 'October 2025' },
+    { category: 'Events', src: '/Images/about_page_3.png', title: 'Dr. Mule Addresses Youth Leaders', date: 'November 2025' },
+    { category: 'Programmes', src: '/Images/about_page_4.png', title: 'She Leads — Women Enterprise Workshop', date: 'November 2025' },
+    { category: 'Community', src: '/Images/about_page_5.png', title: 'SkillReach Language Training Batch', date: 'December 2025' },
+    { category: 'Programmes', src: '/Images/2.png', title: 'Digital Classrooms & Innovation Labs', date: 'January 2026' },
+    { category: 'Events', src: '/Images/3.png', title: 'International Business Expo — Pune', date: 'February 2026' },
+    { category: 'Programmes', src: '/Images/4.png', title: 'Smart Education Initiative Launch', date: 'March 2026' },
+    { category: 'Community', src: '/Images/5.png', title: 'Healthcare Outreach — Khadki Cantonment', date: 'March 2026' },
+    { category: 'Events', src: '/Images/about_page_1.png', title: 'Annual Review & Strategy Summit — DMF', date: 'January 2026' },
+    { category: 'Programmes', src: '/Images/about_page_4.png', title: 'German Language Batch A2 Completion Ceremony', date: 'February 2026' },
+    { category: 'Community', src: '/Images/about_page_2.png', title: 'Flood Relief Distribution — Sangli District', date: 'August 2020' },
 ];
 
 const PRESS = [
-    { outlet: 'The Hindu',         headline: 'DMF & KCB launch International Centre of Excellence to empower youth in Pune',          date: 'Sep 2025',  tag: 'ICOE',     color: 'border-primary'           },
-    { outlet: 'Pune Mirror',       headline: 'She Leads programme sees 25 women form producer groups for sustainable enterprise',      date: 'Nov 2025',  tag: 'Women',    color: 'border-secondary-container'},
-    { outlet: 'Maharashtra Times', headline: 'ICOE reaches 10,000 beneficiaries in six months — Dr. Dnyaneshwar Mule Foundation',    date: 'Mar 2026',  tag: 'Impact',   color: 'border-[#2e7d32]'         },
-    { outlet: 'Sakal',             headline: 'International job placement pipeline for 200+ youth in Germany launched by DMF',        date: 'Dec 2025',  tag: 'Global',   color: 'border-primary'           },
-    { outlet: 'Lokmat',            headline: 'ICOE-KCB-DMF collaboration brings world-class skill training to Khadki defence families',date: 'Oct 2025', tag: 'Skills',   color: 'border-secondary-container'},
-    { outlet: 'Times of India',    headline: 'Former IFS diplomat Dr. Dnyaneshwar Mule builds grassroots innovation movement in Pune', date: 'Sep 2025', tag: 'Profile',  color: 'border-[#2e7d32]'         },
-    { outlet: 'Indian Express',    headline: 'Social innovation labs launched in colleges under DMF — academia-industry bridge',        date: 'Feb 2026', tag: 'Innovation',color: 'border-primary'           },
-    { outlet: 'Economic Times',    headline: 'DMF Nursing Institute GNM programme preparing globally competent healthcare workforce',  date: 'Mar 2026',  tag: 'Healthcare',color: 'border-secondary-container'},
+    { outlet: 'The Hindu', headline: 'DMF & KCB launch International Centre of Excellence to empower youth in Pune', date: 'Sep 2025', tag: 'ICOE', color: 'border-primary', url: 'https://www.skillreporter.com/regional/maharashtra/dnyaneshwar-mulay-foundation-khadki-cantonment-board-centre-of-excellence-skill-development-pune/' },
+    { outlet: 'Pune Mirror', headline: 'She Leads programme sees 25 women form producer groups for sustainable enterprise', date: 'Nov 2025', tag: 'Women', color: 'border-secondary-container', url: '#' },
+    { outlet: 'Maharashtra Times', headline: 'ICOE reaches 10,000 beneficiaries in six months — Dr. Dnyaneshwar Mule Foundation', date: 'Mar 2026', tag: 'Impact', color: 'border-[#2e7d32]', url: 'https://www.skillreporter.com/regional/maharashtra/dnyaneshwar-mulay-foundation-khadki-cantonment-board-centre-of-excellence-skill-development-pune/' },
+    { outlet: 'Sakal', headline: 'International job placement pipeline for 200+ youth in Germany launched by DMF', date: 'Dec 2025', tag: 'Global', color: 'border-primary', url: '#' },
+    { outlet: 'Lokmat', headline: 'ICOE-KCB-DMF collaboration brings world-class skill training to Khadki defence families', date: 'Oct 2025', tag: 'Skills', color: 'border-secondary-container', url: '#' },
+    { outlet: 'Times of India', headline: 'Former IFS diplomat Dr. Dnyaneshwar Mule builds grassroots innovation movement in Pune', date: 'Sep 2025', tag: 'Profile', color: 'border-[#2e7d32]', url: '#' },
+    { outlet: 'Indian Express', headline: 'Social innovation labs launched in colleges under DMF — academia-industry bridge', date: 'Feb 2026', tag: 'Innovation', color: 'border-primary', url: '#' },
+    { outlet: 'Economic Times', headline: 'DMF Nursing Institute GNM programme preparing globally competent healthcare workforce', date: 'Mar 2026', tag: 'Healthcare', color: 'border-secondary-container', url: '#' },
+];
+
+const PUBLICATIONS = [
+    { title: '', pdf: '/Publications/publication_1.pdf', img: '/Publications/publication_1.png', soon: false },
+    { title: '', pdf: '/Publications/publication_2.pdf', img: '/Publications/publication_2.png', soon: false },
+    { title: '', pdf: '#', img: '/Publications/publication_3.png', soon: true },
 ];
 
 const TESTIMONIALS = [
@@ -61,21 +67,22 @@ const TESTIMONIALS = [
 ];
 
 const MILESTONES = [
-    { icon: 'groups',        num: '10,000+',  label: 'ICOE Beneficiaries'   },
-    { icon: 'language',      num: '6',        label: 'Languages Taught'     },
-    { icon: 'flight_takeoff',num: '200+',     label: 'Global Placements'    },
-    { icon: 'woman',         num: '25',       label: 'Women Entrepreneurs'  },
-    { icon: 'school',        num: '230+',     label: 'Youth Enrolled'       },
-    { icon: 'handshake',     num: '8+',       label: 'Partner Institutions' },
+    { icon: 'groups', num: '10,000+', label: 'ICOE Beneficiaries' },
+    { icon: 'language', num: '6', label: 'Languages Taught' },
+    { icon: 'flight_takeoff', num: '200+', label: 'Global Placements' },
+    { icon: 'woman', num: '25', label: 'Women Entrepreneurs' },
+    { icon: 'school', num: '230+', label: 'Youth Enrolled' },
+    { icon: 'handshake', num: '8+', label: 'Partner Institutions' },
 ];
 
 const VIDEOS = [
     {
-        title: 'ICOE Inauguration — Official Highlights',
+        title: 'Sushma Swaraj Praises Dnyaneshwar Mulay',
         desc: 'Watch the full ceremony of the International Centre of Excellence launch at Khadki Cantonment Board, Pune, with Dr. Dnyaneshwar Mule as Advisor.',
         thumb: '/Images/about_page_1.png',
         duration: '4:32',
         tag: 'Events',
+        link: 'https://www.youtube.com/watch?v=Tn4QTjjBbO4',
     },
     {
         title: 'She Leads — Women Enterprise Stories',
@@ -83,6 +90,7 @@ const VIDEOS = [
         thumb: '/Images/about_page_4.png',
         duration: '6:15',
         tag: 'Programmes',
+        link: '#',
     },
     {
         title: 'SkillReach — German Language Success Stories',
@@ -90,15 +98,16 @@ const VIDEOS = [
         thumb: '/Images/about_page_5.png',
         duration: '5:48',
         tag: 'Community',
+        link: '#',
     },
 ];
 
 const SOCIAL = [
-    { platform: 'Facebook',  handle: '@dmfmop',        icon: 'thumb_up',     color: 'bg-[#1877F2]', followers: '12K+' },
-    { platform: 'Instagram', handle: '@dmfmop',        icon: 'photo_camera', color: 'bg-[#E1306C]', followers: '8.5K+' },
-    { platform: 'Twitter/X', handle: '@dmfmop',        icon: 'rss_feed',     color: 'bg-[#1DA1F2]', followers: '4K+'  },
-    { platform: 'YouTube',   handle: 'DMF Foundation', icon: 'play_circle',  color: 'bg-[#FF0000]', followers: '2.1K+'},
-    { platform: 'LinkedIn',  handle: 'DMF India',      icon: 'work',         color: 'bg-[#0A66C2]', followers: '5K+'  },
+    { platform: 'Facebook', handle: '@dmfmop', icon: 'thumb_up', color: 'bg-[#1877F2]', followers: '12K+' },
+    { platform: 'Instagram', handle: '@dmfmop', icon: 'photo_camera', color: 'bg-[#E1306C]', followers: '8.5K+' },
+    { platform: 'Twitter/X', handle: '@dmfmop', icon: 'rss_feed', color: 'bg-[#1DA1F2]', followers: '4K+' },
+    { platform: 'YouTube', handle: 'DMF Foundation', icon: 'play_circle', color: 'bg-[#FF0000]', followers: '2.1K+' },
+    { platform: 'LinkedIn', handle: 'DMF India', icon: 'work', color: 'bg-[#0A66C2]', followers: '5K+' },
 ];
 
 const TABS = ['All', 'Events', 'Community', 'Programmes'];
@@ -179,11 +188,10 @@ export default function Media() {
                                 <button
                                     key={tab}
                                     onClick={() => setActiveTab(tab)}
-                                    className={`px-6 py-2 rounded-full font-label text-sm font-semibold transition-all ${
-                                        activeTab === tab
-                                            ? 'bg-primary text-white'
-                                            : 'bg-surface-container-lowest text-on-surface-variant hover:bg-primary/10 hover:text-primary'
-                                    }`}
+                                    className={`px-6 py-2 rounded-full font-label text-sm font-semibold transition-all ${activeTab === tab
+                                        ? 'bg-primary text-white'
+                                        : 'bg-surface-container-lowest text-on-surface-variant hover:bg-primary/10 hover:text-primary'
+                                        }`}
                                 >
                                     {tab}
                                 </button>
@@ -244,7 +252,7 @@ export default function Media() {
                         </div>
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                             {VIDEOS.map((v, i) => (
-                                <div key={i} className="group bg-surface-container-lowest rounded-2xl overflow-hidden shadow-md hover:-translate-y-2 transition-all duration-300">
+                                <a key={i} href={v.link || '#'} target={v.link && v.link !== '#' ? "_blank" : undefined} rel={v.link && v.link !== '#' ? "noopener noreferrer" : undefined} className="group bg-surface-container-lowest rounded-2xl overflow-hidden shadow-md hover:-translate-y-2 transition-all duration-300 block">
                                     <div className="relative aspect-video overflow-hidden">
                                         <img alt={v.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src={v.thumb} />
                                         <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
@@ -260,10 +268,10 @@ export default function Media() {
                                         </div>
                                     </div>
                                     <div className="p-6">
-                                        <h4 className="font-headline font-bold text-primary text-base mb-2 leading-snug">{v.title}</h4>
+                                        <h4 className="font-headline font-bold text-primary text-base mb-2 leading-snug group-hover:text-secondary-container transition-colors">{v.title}</h4>
                                         <p className="text-on-surface-variant text-sm leading-relaxed">{v.desc}</p>
                                     </div>
-                                </div>
+                                </a>
                             ))}
                         </div>
                     </div>
@@ -280,7 +288,7 @@ export default function Media() {
                         </div>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                             {PRESS.map((p, i) => (
-                                <div key={i} className={`bg-surface-container-low rounded-2xl p-8 border-l-4 ${p.color} shadow-sm hover:-translate-y-1 transition-all duration-300`}>
+                                <a key={i} href={p.url} target="_blank" rel="noopener noreferrer" className={`block bg-surface-container-low rounded-2xl p-8 border-l-4 ${p.color} shadow-sm hover:-translate-y-1 transition-all duration-300 no-underline`}>
                                     <div className="flex items-center gap-3 mb-4">
                                         <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
                                             <span className="material-symbols-outlined text-primary text-xl">newspaper</span>
@@ -292,11 +300,53 @@ export default function Media() {
                                         <span className="ml-auto text-[10px] font-black uppercase tracking-widest bg-primary/10 text-primary px-3 py-1 rounded-full flex-shrink-0">{p.tag}</span>
                                     </div>
                                     <p className="text-on-surface-variant leading-relaxed text-sm font-medium italic">"{p.headline}"</p>
-                                    <div className="mt-4 flex items-center gap-2 text-primary text-xs font-bold uppercase tracking-widest cursor-pointer hover:text-secondary-container transition-colors">
+                                    <div className="mt-4 flex items-center gap-2 text-primary text-xs font-bold uppercase tracking-widest hover:text-secondary-container transition-colors">
                                         <span>Read Article</span>
                                         <span className="material-symbols-outlined text-sm">arrow_forward</span>
                                     </div>
+                                </a>
+                            ))}
+                        </div>
+                    </div>
+                </section>
+
+                {/* ── Foundation Publications ───────────────────────────────────── */}
+                <section className="py-20 bg-surface-container-low px-8">
+                    <div className="max-w-7xl mx-auto">
+                        <div className="text-center mb-14">
+                            <span className="font-label text-secondary text-xs font-bold tracking-widest uppercase mb-3 block">Knowledge & Research</span>
+                            <h2 className="font-headline text-4xl font-extrabold text-primary mb-4">Foundation Publications</h2>
+                            <div className="w-16 h-1 bg-secondary-container mx-auto mb-4"></div>
+                            <p className="text-on-surface-variant max-w-2xl mx-auto">Explore our extensive research, frameworks, and reports detailing our impact and methodologies.</p>
+                        </div>
+                        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                            {PUBLICATIONS.map((pub, i) => pub.soon ? (
+                                <div key={i} className="group relative rounded-lg overflow-hidden shadow-md cursor-not-allowed border border-[#fe9832] bg-white">
+                                    <div className="aspect-[3/4] relative">
+                                        <img alt={pub.title} className="w-full h-full object-cover" src={pub.img} />
+                                        <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center p-6 text-center">
+                                            <div className="bg-primary/90 text-white px-6 py-3 rounded-full font-headline font-bold uppercase tracking-widest shadow-xl transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                                                Coming Soon
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="p-4 text-center bg-white border-t border-gray-100">
+                                        <h4 className="font-headline font-bold text-on-surface-variant text-base">{pub.title}</h4>
+                                    </div>
                                 </div>
+                            ) : (
+                                <a key={i} href={pub.pdf} target="_blank" rel="noopener noreferrer" className="group rounded-lg overflow-hidden shadow-md hover:-translate-y-2 transition-all duration-300 border border-outline-variant/20 bg-white block">
+                                    <div className="aspect-[3/4] relative overflow-hidden">
+                                        <img alt={pub.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src={pub.img} />
+                                        <div className="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors duration-300"></div>
+                                        <div className="absolute bottom-4 right-4 w-12 h-12 rounded-full bg-primary/90 text-white flex items-center justify-center shadow-lg opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-300">
+                                            <span className="material-symbols-outlined">menu_book</span>
+                                        </div>
+                                    </div>
+                                    <div className="p-4 text-center bg-white border-t border-gray-100">
+                                        <h4 className="font-headline font-bold text-primary text-base group-hover:text-secondary-container transition-colors">{pub.title}</h4>
+                                    </div>
+                                </a>
                             ))}
                         </div>
                     </div>
