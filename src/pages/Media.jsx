@@ -25,8 +25,8 @@ const PRESS = [
 ];
 
 const PUBLICATIONS = [
-    { title: '', pdf: '/Publications/publication_1.pdf', img: '/Publications/publication_1.png', soon: false },
-    { title: '', pdf: '/Publications/publication_2.pdf', img: '/Publications/publication_2.png', soon: false },
+    { title: '', pdf: '#', img: '/Publications/publication_1.png', soon: false },
+    { title: '', pdf: '#', img: '/Publications/publication_2.png', soon: false },
     { title: '', pdf: '#', img: '/Publications/publication_3.png', soon: true },
 ];
 
@@ -150,7 +150,7 @@ export default function Media() {
                         </div>
                         <div className="md:col-span-5 relative">
                             <div className="aspect-[4/5] rounded-xl overflow-hidden shadow-2xl">
-                                <img alt="DMF Media" className="w-full h-full object-cover" src="/Images/about_page_3.png" />
+                                <img alt="DMF Media" className="w-full h-full object-cover" src="/Images/about_page_1.png" />
                             </div>
                             <div className="absolute -bottom-6 -left-6 bg-surface-container-lowest p-6 rounded-lg shadow-xl max-w-xs hidden md:block">
                                 <p className="text-secondary font-bold text-3xl font-headline">50+</p>
@@ -320,9 +320,7 @@ export default function Media() {
                                     <div className="aspect-[3/4] relative">
                                         <img alt={pub.title} className="w-full h-full object-cover" src={pub.img} />
                                         <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center p-6 text-center">
-                                            <div className="bg-primary/90 text-white px-6 py-3 rounded-full font-headline font-bold uppercase tracking-widest shadow-xl transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
-                                                Coming Soon
-                                            </div>
+
                                         </div>
                                     </div>
                                     <div className="p-4 text-center bg-white border-t border-gray-100">

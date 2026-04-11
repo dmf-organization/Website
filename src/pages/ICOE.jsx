@@ -687,7 +687,7 @@ export default function ICOE() {
                     <div className="max-w-7xl mx-auto">
                         <div className="text-center mb-16">
                             <span className="font-label text-secondary text-xs font-bold tracking-widest uppercase mb-3 block">DMF Initiative</span>
-                            <h2 className="font-headline text-4xl font-extrabold text-primary mb-4">Orphanage Support Programme</h2>
+                            <h2 className="font-headline text-4xl font-extrabold text-primary mb-4">Orphanage Home</h2>
                             <div className="w-16 h-1 bg-secondary-container mx-auto mb-6"></div>
                             <p className="text-on-surface-variant max-w-3xl mx-auto leading-relaxed">
                                 The Dr. Dnyaneshwar Mule Foundation actively supports orphaned and underprivileged children through holistic care, education, and skill development initiatives — giving every child dignity, opportunity, and hope for a better future.

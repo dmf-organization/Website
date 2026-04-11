@@ -25,14 +25,19 @@ function useCountUp(target, duration = 2000, startWhen = false) {
 }
 
 /* ─── Single stat counter item ────────────────────────────────────────── */
-function StatCounter({ num, suffix, label, colorClass, started }) {
+function StatCounter({ icon, num, suffix, label, started }) {
     const count = useCountUp(num, 2000, started);
     return (
-        <div className="space-y-2">
-            <div className={`font-headline text-5xl md:text-6xl font-black ${colorClass}`}>
+        <div className="flex flex-col items-center text-center space-y-3">
+            {icon && (
+                <span className="material-symbols-outlined text-secondary-container text-3xl">
+                    {icon}
+                </span>
+            )}
+            <div className="font-headline text-4xl lg:text-5xl font-bold text-white">
                 {count.toLocaleString()}{suffix}
             </div>
-            <div className="text-xs font-headline tracking-[0.2em] font-bold uppercase text-white/60">
+            <div className="text-[10px] md:text-[11px] font-headline tracking-widest font-bold uppercase text-white/50">
                 {label}
             </div>
         </div>
@@ -172,7 +177,7 @@ export default function Home() {
                         </div>
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
                             {/* Positivity Column (MOP) */}
-                            <div className="relative bg-secondary-container p-12 rounded-xl group hover:-translate-y-2 transition-all duration-500 shadow-xl overflow-hidden">
+                            <Link to="/icoe#movement-of-positivity" className="block relative bg-secondary-container p-12 rounded-xl group hover:-translate-y-2 transition-all duration-500 shadow-xl overflow-hidden cursor-pointer">
                                 <div className="absolute top-0 right-0 p-8 opacity-10 scale-150">
                                     <span className="material-symbols-outlined text-8xl" data-icon="sunny">sunny</span>
                                 </div>
@@ -180,12 +185,13 @@ export default function Home() {
                                     <span className="material-symbols-outlined text-primary text-5xl mb-6 block" data-icon="sentiment_very_satisfied">sentiment_very_satisfied</span>
                                     <h3 className="font-headline text-3xl font-extrabold text-primary mb-4">MOVEMENT OF POSITIVITY</h3>
                                     <p className="text-primary/80 font-medium mb-8 leading-relaxed">Movement of Positivity (MOP) — building a network of active citizens to foster optimism, hope, and constructive action in every community we serve.</p>
-                                    <Link className="inline-flex items-center gap-2 font-headline text-xs font-black tracking-widest text-primary uppercase border-b-2 border-primary/20 hover:border-primary transition-all" to="/missions">
-                                    </Link>
+                                    <span className="inline-flex items-center gap-2 font-headline text-xs font-black tracking-widest text-primary uppercase border-b-2 border-primary/20 group-hover:border-primary transition-all">
+                                        Learn More <span className="material-symbols-outlined text-sm">arrow_forward</span>
+                                    </span>
                                 </div>
-                            </div>
+                            </Link>
                             {/* Compassion Column (ICOE) */}
-                            <div className="relative bg-surface-container-lowest p-12 rounded-xl group hover:-translate-y-2 transition-all duration-500 shadow-xl border border-outline-variant/10">
+                            <Link to="/icoe#icoe" className="block relative bg-surface-container-lowest p-12 rounded-xl group hover:-translate-y-2 transition-all duration-500 shadow-xl border border-outline-variant/10 cursor-pointer">
                                 <div className="absolute top-0 right-0 p-8 opacity-10 scale-150 text-primary">
                                     <span className="material-symbols-outlined text-8xl" data-icon="favorite">favorite</span>
                                 </div>
@@ -193,12 +199,13 @@ export default function Home() {
                                     <span className="material-symbols-outlined text-primary text-5xl mb-6 block" data-icon="school">school</span>
                                     <h3 className="font-headline text-3xl font-extrabold text-primary mb-4">ICOE</h3>
                                     <p className="text-on-surface-variant font-medium mb-8 leading-relaxed">International Centre of Excellence — a collaborative initiative focused on international placement, skill development, and foreign employment.</p>
-                                    <Link className="inline-flex items-center gap-2 font-headline text-xs font-black tracking-widest text-primary uppercase border-b-2 border-primary/20 hover:border-primary transition-all" to="/missions">
-                                    </Link>
+                                    <span className="inline-flex items-center gap-2 font-headline text-xs font-black tracking-widest text-primary uppercase border-b-2 border-primary/20 group-hover:border-primary transition-all">
+                                        Learn More <span className="material-symbols-outlined text-sm">arrow_forward</span>
+                                    </span>
                                 </div>
-                            </div>
+                            </Link>
                             {/* Creativity Column (Words Beyond Borders) */}
-                            <div className="relative bg-[#2e7d32] p-12 rounded-xl group hover:-translate-y-2 transition-all duration-500 shadow-xl overflow-hidden">
+                            <Link to="/icoe#words-beyond-borders" className="block relative bg-[#2e7d32] p-12 rounded-xl group hover:-translate-y-2 transition-all duration-500 shadow-xl overflow-hidden cursor-pointer">
                                 <div className="absolute top-0 right-0 p-8 opacity-10 scale-150 text-white">
                                     <span className="material-symbols-outlined text-8xl" data-icon="diversity_3">diversity_3</span>
                                 </div>
@@ -206,10 +213,11 @@ export default function Home() {
                                     <span className="material-symbols-outlined text-white text-5xl mb-6 block" data-icon="auto_stories">auto_stories</span>
                                     <h3 className="font-headline text-3xl font-extrabold text-white mb-4">WORDS BEYOND BORDERS</h3>
                                     <p className="text-white/80 font-medium mb-8 leading-relaxed">Words Beyond Borders — an international literary gathering celebrating diplomats who enrich the world of literature across diverse cultural landscapes.</p>
-                                    <Link className="inline-flex items-center gap-2 font-headline text-xs font-black tracking-widest text-white uppercase border-b-2 border-white/20 hover:border-white transition-all" to="/missions">
-                                    </Link>
+                                    <span className="inline-flex items-center gap-2 font-headline text-xs font-black tracking-widest text-white uppercase border-b-2 border-white/20 group-hover:border-white transition-all">
+                                        Learn More <span className="material-symbols-outlined text-sm">arrow_forward</span>
+                                    </span>
                                 </div>
-                            </div>
+                            </Link>
                         </div>
                     </div>
                 </section>
@@ -225,12 +233,14 @@ export default function Home() {
                             <div className="border-r border-white/20"></div>
                         </div>
                     </div>
-                    <div className="max-w-7xl mx-auto px-8 relative z-10">
-                        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center md:text-left">
-                            <StatCounter num={500} suffix="K+" label="Beneficiaries" colorClass="text-secondary-container" started={counterStarted} duration={1} />
-                            <StatCounter num={200} suffix="+" label="Int'l Placements" colorClass="text-white" started={counterStarted} duration={10} />
-                            <StatCounter num={230} suffix="+" label="Youth Enrolled" colorClass="text-secondary-container" started={counterStarted} duration={1} />
-                            <StatCounter num={10} suffix="K+" label="ICOE Outreach" colorClass="text-white" started={counterStarted} duration={0.01} />
+                    <div className="max-w-7xl mx-auto px-4 md:px-8 relative z-10 w-full">
+                        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 md:gap-8 justify-center items-start">
+                            <StatCounter icon="groups" num={10000} suffix="+" label="ICOE Beneficiaries" started={counterStarted} />
+                            <StatCounter icon="language" num={6} suffix="" label="Languages Taught" started={counterStarted} />
+                            <StatCounter icon="flight_takeoff" num={200} suffix="+" label="Global Placements" started={counterStarted} />
+                            <StatCounter icon="woman" num={25} suffix="" label="Women Entrepreneurs" started={counterStarted} />
+                            <StatCounter icon="school" num={230} suffix="+" label="Youth Enrolled" started={counterStarted} />
+                            <StatCounter icon="handshake" num={8} suffix="+" label="Partner Institutions" started={counterStarted} />
                         </div>
                     </div>
                 </section>
