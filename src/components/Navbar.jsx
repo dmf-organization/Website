@@ -17,11 +17,16 @@ const Navbar = () => {
     return (
         <nav className="fixed top-0 left-0 right-0 z-50 bg-white/10 backdrop-blur-2xl border-b border-white/20 shadow-[0_8px_32px_0_rgba(0,0,0,0.3)]">
             <div className="flex justify-between items-center w-full px-6 py-4 max-w-7xl mx-auto">
-                <img
-                    src="/logo/dmfmop_logo.png"
-                    alt="DMF - Movement of Positivity"
-                    className="h-16 w-auto object-contain drop-shadow-[0_2px_4px_rgba(0,0,0,0.6)]"
-                />
+                <Link to="/" className="flex items-center gap-3">
+                    <img
+                        src="/logo/dmfmop_logo.png"
+                        alt="DMF - Movement of Positivity"
+                        className="h-14 md:h-16 w-auto object-contain drop-shadow-[0_2px_4px_rgba(0,0,0,0.6)]"
+                    />
+                    <span className="text-white font-headline font-bold text-lg leading-tight tracking-wide drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)] hidden sm:block max-w-[200px] md:max-w-none">
+                        Dr. Dnyaneshwar<br className="md:hidden" /> Mule Foundation
+                    </span>
+                </Link>
                 <div className="flex items-center gap-6">
                     <div className="hidden md:flex items-center gap-6">
                         <Link className={getLinkClass('/')} to="/">Home</Link>
