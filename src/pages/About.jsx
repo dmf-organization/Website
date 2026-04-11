@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import { Link } from 'react-router-dom';
 
-const SLIDES = [
+const BASE_SLIDES = [
 
     {
         src: '/Images/about_page_3.png',
@@ -41,11 +41,46 @@ const SLIDES = [
     },
 ];
 
+const MOBILE_EXTRA_SLIDES = [
+    {
+        src: '/Images/Untitled design (2).png',
+        alt: 'DMF Community Initiatives',
+        caption: 'Empowering Communities Through Education',
+    },
+    {
+        src: '/Images/m_mobile_page_2.png',
+        alt: 'DMF Community Initiatives',
+        caption: 'Empowering Communities Through Education',
+    },
+    {
+        src: '/Images/m.jpg.jpeg',
+        alt: 'DMF Community Initiatives',
+        caption: 'Empowering Communities Through Education',
+    }
+];
+
 export default function About() {
+    const [isMobile, setIsMobile] = useState(false);
+
+    useEffect(() => {
+        const handleResize = () => setIsMobile(window.innerWidth < 768);
+        handleResize(); // Initial check
+        window.addEventListener('resize', handleResize);
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
+
+    const slides = isMobile ? MOBILE_EXTRA_SLIDES : BASE_SLIDES;
+
     const [current, setCurrent] = useState(0);
     const [prev_idx, setPrevIdx] = useState(null);
     const [direction, setDirection] = useState('right'); // 'right' | 'left'
     const [sliding, setSliding] = useState(false);
+
+    useEffect(() => {
+        if (current >= slides.length) {
+            setCurrent(0);
+        }
+    }, [slides.length, current]);
 
     const goTo = useCallback((idx) => {
         if (sliding) return;
@@ -63,24 +98,24 @@ export default function About() {
     }, [current, sliding]);
 
     const next = useCallback(() => {
-        const idx = (current + 1) % SLIDES.length;
+        const idx = (current + 1) % slides.length;
         if (sliding) return;
         setDirection('right');
         setPrevIdx(current);
         setSliding(true);
         setCurrent(idx);
         setTimeout(() => { setPrevIdx(null); setSliding(false); }, 650);
-    }, [current, sliding]);
+    }, [current, sliding, slides.length]);
 
     const prevSlide = useCallback(() => {
-        const idx = (current - 1 + SLIDES.length) % SLIDES.length;
+        const idx = (current - 1 + slides.length) % slides.length;
         if (sliding) return;
         setDirection('left');
         setPrevIdx(current);
         setSliding(true);
         setCurrent(idx);
         setTimeout(() => { setPrevIdx(null); setSliding(false); }, 650);
-    }, [current, sliding]);
+    }, [current, sliding, slides.length]);
 
     /* Auto-advance every 4 s */
     useEffect(() => {
@@ -94,7 +129,7 @@ export default function About() {
                 {/* ── Hero Slider ──────────────────────────────────── */}
                 <section className="relative h-screen w-screen flex items-center overflow-hidden bg-black">
                     {/* Slides */}
-                    {SLIDES.map((slide, i) => {
+                    {slides.map((slide, i) => {
                         const isActive = i === current;
                         const isExiting = i === prev_idx;
                         let slideStyle = {};
@@ -169,10 +204,10 @@ export default function About() {
                     {/* ── Dot indicators + caption ── */}
                     <div className="absolute bottom-6 left-1/2 -translate-x-1/2 z-20 flex flex-col items-center gap-3">
                         <p className="text-white/70 text-xs font-medium tracking-widest uppercase">
-                            {SLIDES[current].caption}
+                            {slides[current < slides.length ? current : 0].caption}
                         </p>
                         <div className="flex gap-2">
-                            {SLIDES.map((_, i) => (
+                            {slides.map((_, i) => (
                                 <button
                                     key={i}
                                     onClick={() => goTo(i)}
@@ -254,7 +289,7 @@ export default function About() {
                                 <span className="material-symbols-outlined text-4xl text-secondary-container mb-6" data-icon="visibility">visibility</span>
                                 <h3 className="font-headline text-3xl font-bold text-primary mb-4">Our Vision</h3>
                                 <p className="text-on-surface-variant text-lg leading-relaxed">
-                                    Work towards creating a <strong className="text-primary">modern, democratic, progressive nation</strong>. Promoting equality, justice and freedom as core values of a citizen's life.
+                                    To work towards creating a <strong className="text-primary">modern, democratic, progressive nation</strong>. Promoting equality, justice and freedom as core values of a citizen's life.
                                 </p>
                             </div>
                         </div>

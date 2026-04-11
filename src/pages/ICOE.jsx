@@ -8,7 +8,7 @@ export default function ICOE() {
         <div>
             <main>
                 {/* Hero Section */}
-                <section className="relative w-full flex items-center overflow-hidden bg-primary" style={{ aspectRatio: '16/5' }}>
+                <section className="relative w-full flex items-center overflow-hidden bg-primary aspect-[4/3] md:aspect-[16/5]">
                     <div className="absolute inset-0 z-0">
                         <img
                             alt="ICOE Khadki Cantonment Board"
