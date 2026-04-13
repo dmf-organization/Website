@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 const MEDIA_ITEMS = [
     { category: 'Events', src: '/Images/WhatsApp Image 2026-04-09 at 15.25.51.jpeg', title: 'ICOE Inauguration — Khadki, Pune', date: 'September 2025' },
     { category: 'Community', src: '/Images/about_page_2.png', title: 'Community Mobilization Drive', date: 'October 2025' },
-    { category: 'Events', src: '/Images/social_work_1.png', title: 'Dr. Mule Addresses Youth Leaders', date: 'November 2025' },
+    { category: 'Events', src: '/Images/social_work_1.png', title: 'Dr. Mulay Addresses Youth Leaders', date: 'November 2025' },
     { category: 'Programmes', src: '/Images/WhatsApp Image 2026-04-06 at 12.20.21.jpeg', title: 'She Leads — Women Enterprise Workshop', date: 'November 2025' },
     { category: 'Community', src: '/Images/about_page_5.png', title: 'SkillReach Language Training Batch', date: 'December 2025' },
     { category: 'Programmes', src: '/Images/WhatsApp Image 2026-04-10 at 10.32.18.jpeg', title: 'Digital Classrooms & Innovation Labs', date: 'January 2026' },
@@ -72,8 +72,8 @@ const MILESTONES = [
 
 const VIDEOS = [
     {
-        title: 'Sushma Swaraj Praises Dnyaneshwar Mulay',
-        desc: 'Watch the full ceremony of the International Centre of Excellence launch at Khadki Cantonment Board, Pune, with Dr. Dnyaneshwar Mule as Advisor.',
+        title: 'Shreemati Sushma Swaraj Praises Dr. Dnyaneshwar Mulay',
+        desc: 'Watch the full ceremony of the International Centre of Excellence launch at Khadki Cantonment Board, Pune, with Dr. Dnyaneshwar Mulay as Advisor.',
         thumb: '/Images/about_page_1.png',
         duration: '4:32',
         tag: 'Events',
@@ -137,7 +137,7 @@ export default function Media() {
                                 Media &amp; <span className="text-secondary-container">Gallery</span>
                             </h1>
                             <p className="font-body text-lg text-on-surface-variant max-w-xl leading-relaxed mb-6">
-                                Explore photos, press coverage, video highlights, and stories from Dr. Dnyaneshwar Mule Foundation's programs, events, and community initiatives across India.
+                                Explore photos, press coverage, video highlights, and stories from Dr. Dnyaneshwar Mulay Foundation's programs, events, and community initiatives across India.
                             </p>
                             <p className="font-body text-base text-on-surface-variant max-w-xl leading-relaxed mb-8">
                                 From the ICOE inauguration to flood relief operations, from She Leads workshops to international job placement ceremonies — our media archive tells the story of real change through real people.

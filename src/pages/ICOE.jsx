@@ -39,7 +39,7 @@ export default function ICOE() {
                                         { icon: 'lightbulb', label: 'Social Innovation Path', href: '#social-innovation-path' },
                                         { icon: 'diversity_3', label: 'She Leads', href: '#she-leads' },
                                         { icon: 'build', label: 'Skill Reach', href: '#skill-reach' },
-                                        { icon: 'elderly', label: 'Old Age Home', href: '#old-age-home' },
+                                        { icon: 'elderly', label: 'Shelter Home', href: '#old-age-home' },
                                         { icon: 'work', label: 'Job Fair', href: '#job-fair' },
                                     ].map((item, i) => (
                                         <a
@@ -60,7 +60,7 @@ export default function ICOE() {
                             </div>
                             <div className="md:col-span-7 md:mt-[5.5rem] space-y-6 text-on-surface-variant leading-relaxed text-base">
                                 <p>
-                                    The <strong className="text-primary">Dr. Dnyaneshwar Mule Foundation (DMF)</strong> is a globally recognized non-profit organization with deep roots in India, committed to providing innovative and beneficial solutions since 2019.
+                                    The <strong className="text-primary">Dr. Dnyaneshwar Mulay Foundation (DMF)</strong> is a globally recognized non-profit organization with deep roots in India, committed to providing innovative and beneficial solutions since 2019.
                                 </p>
                                 <p>
                                     Founded by <strong className="text-primary">Dr. Dnyaneshwar Mulay</strong>, a distinguished career diplomat of the Indian Foreign Service, DMF has been at the forefront of driving social transformation through education, skill development, women's empowerment, and community engagement.
@@ -72,9 +72,9 @@ export default function ICOE() {
                                     The foundation specializes in <strong className="text-primary">Social Innovation, Urban & Rural Mobilization, Capacity & Skill Building</strong>, and <strong className="text-primary">Transforming Rural & Urban Education</strong> through Digital Classrooms and Innovation Labs.
                                 </p>
                                 <div className="rounded-2xl overflow-hidden shadow-xl mt-4">
-                                    <img 
-                                        src="/Images/home_page_slide_image_1.jpeg" 
-                                        alt="Dr. Dnyaneshwar Mulay Foundation Team" 
+                                    <img
+                                        src="/Images/home_page_slide_image_1.jpeg"
+                                        alt="Dr. Dnyaneshwar Mulay Foundation Team"
                                         className="w-full h-auto object-cover max-h-[350px]"
                                     />
                                 </div>
@@ -92,7 +92,7 @@ export default function ICOE() {
                             <h2 className="font-headline text-4xl font-extrabold text-white mb-4">Movement of Positivity / चांगुल पणाची चळवळ / अच्छाई का अभियान</h2>
                             <div className="w-16 h-1 bg-secondary-container mx-auto mb-6"></div>
                             <p className="text-white/70 max-w-3xl mx-auto leading-relaxed">
-                                The Movement of Positivity is the beating heart of the Dr. Dnyaneshwar Mule Foundation — a values-driven initiative that fosters optimism, ethical leadership, and constructive community action across India.
+                                The Movement of Positivity is the beating heart of the Dr. Dnyaneshwar Mulay Foundation — a values-driven initiative that fosters optimism, ethical leadership, and constructive community action across India.
                             </p>
                         </div>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-16">
@@ -161,7 +161,7 @@ export default function ICOE() {
                                     <span className="material-symbols-outlined text-secondary-container text-5xl mb-4 block">school</span>
                                     <h3 className="font-headline text-2xl font-bold mb-3">A Platform for Innovation & Skill Development</h3>
                                     <p className="text-white/80 text-sm leading-relaxed mb-6">
-                                        Under Dr. Mulay's leadership through DMF, the COE was established as a forward-looking platform to nurture talent, encourage innovation, and connect individuals with national and global opportunities.
+                                        Under Dr. Mulay's leadership through DMF, the ICOE was established as a forward-looking platform to nurture talent, encourage innovation, and connect individuals with national and global opportunities.
                                     </p>
                                     <div className="grid grid-cols-2 gap-4">
                                         {[
@@ -179,7 +179,7 @@ export default function ICOE() {
                                 </div>
                                 <div className="bg-primary/5 border-l-4 border-secondary-container p-6 rounded-r-xl">
                                     <p className="italic text-primary font-medium leading-relaxed">
-                                        "The COE serves as a collaborative centre dedicated to innovation and skill development — a forward-looking platform to nurture talent, encourage innovation, and connect individuals with national and global opportunities."
+                                        "The ICOE serves as a collaborative centre dedicated to innovation and skill development — a forward-looking platform to nurture talent, encourage innovation, and connect individuals with national and global opportunities."
                                     </p>
                                 </div>
                             </div>
@@ -237,7 +237,7 @@ export default function ICOE() {
                             <h2 className="font-headline text-4xl font-extrabold text-primary mb-4">Nursing Institute — GNM Program</h2>
                             <div className="w-16 h-1 bg-secondary-container mx-auto mb-6"></div>
                             <p className="text-on-surface-variant max-w-3xl mx-auto leading-relaxed">
-                                The Nursing Institute at Dr. Dnyaneshwar Mule Foundation is committed to developing compassionate, skilled, and globally competent healthcare professionals. The <strong className="text-primary">GNM (General Nursing &amp; Midwifery)</strong> Program provides comprehensive training in nursing care, midwifery, and community health.
+                                The Nursing Institute at Dr. Dnyaneshwar Mulay Foundation is committed to developing compassionate, skilled, and globally competent healthcare professionals. The <strong className="text-primary">GNM (General Nursing &amp; Midwifery)</strong> Program provides comprehensive training in nursing care, midwifery, and community health.
                             </p>
                         </div>
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
@@ -301,7 +301,7 @@ export default function ICOE() {
                                 </h2>
                                 <div className="w-16 h-1 bg-[#2e7d32] mb-8"></div>
                                 <p className="text-on-surface-variant leading-relaxed mb-6">
-                                    <strong className="text-primary">She Leads</strong> is a flagship initiative under COE focused exclusively on empowering women from defence families and civilian communities. The programme builds confidence, vocational skills, and entrepreneurial mindset to enable sustainable livelihoods.
+                                    <strong className="text-primary">She Leads</strong> is a flagship initiative under ICOE focused exclusively on empowering women from defence families and civilian communities. The programme builds confidence, vocational skills, and entrepreneurial mindset to enable sustainable livelihoods.
                                 </p>
                                 <div className="space-y-4">
                                     {[
@@ -344,7 +344,7 @@ export default function ICOE() {
                             <span className="font-label text-secondary text-xs font-bold tracking-widest uppercase mb-3 block">FROM LOCAL TALENT TO GLOBAL IMPACT</span>
                             <h2 className="font-headline text-4xl font-extrabold text-primary mb-4">Skill Reach</h2>
                             <div className="w-16 h-1 bg-secondary-container mx-auto mb-4"></div>
-                            <p className="text-on-surface-variant max-w-2xl mx-auto">COE's ongoing programs actively focus on skill enhancement, entrepreneurship development, career guidance, and language proficiency, benefiting hundreds of youth and women from defence families and civilian communities.</p>
+                            <p className="text-on-surface-variant max-w-2xl mx-auto">ICOE's ongoing programs actively focus on skill enhancement, entrepreneurship development, career guidance, and language proficiency, benefiting hundreds of youth and women from defence families and civilian communities.</p>
                         </div>
 
                         {/* 2×2 Grid of Programs */}
@@ -492,7 +492,7 @@ export default function ICOE() {
                             <span className="font-label text-secondary text-xs font-bold tracking-widest uppercase mb-3 block">Coming Soon</span>
                             <h2 className="font-headline text-4xl font-extrabold text-primary mb-4">Upcoming Programs</h2>
                             <div className="w-16 h-1 bg-secondary-container mx-auto mb-4"></div>
-                            <p className="text-on-surface-variant max-w-xl mx-auto">COE continues to expand its portfolio with new programs designed to meet evolving community needs.</p>
+                            <p className="text-on-surface-variant max-w-xl mx-auto">ICOE continues to expand its portfolio with new programs designed to meet evolving community needs.</p>
                         </div>
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                             {[
@@ -547,7 +547,7 @@ export default function ICOE() {
                                 <h2 className="font-headline text-4xl font-extrabold text-primary mb-4">Social Innovation Path</h2>
                                 <div className="w-16 h-1 bg-secondary-container mb-6"></div>
                                 <p className="text-on-surface-variant leading-relaxed mb-8">
-                                    At Dr. Dnyaneshwar Mule Foundation, we believe that real and lasting change emerges when innovation meets purpose. Our Social Innovation Labs are dynamic platforms where ideas, people, and resources come together to solve pressing social challenges — bringing together students, academicians, government stakeholders, industry experts, and community members to co-create practical, scalable, and impactful solutions.
+                                    At Dr. Dnyaneshwar Mulay Foundation, we believe that real and lasting change emerges when innovation meets purpose. Our Social Innovation Labs are dynamic platforms where ideas, people, and resources come together to solve pressing social challenges — bringing together students, academicians, government stakeholders, industry experts, and community members to co-create practical, scalable, and impactful solutions.
                                 </p>
                                 {/* Vision */}
                                 <div className="bg-primary/5 border-l-4 border-secondary-container rounded-r-2xl p-6">
@@ -684,15 +684,15 @@ export default function ICOE() {
 
 
 
-                {/* ── Old Age Home ─────────────────────────── */}
+                {/* ── Shelter Home ─────────────────────────── */}
                 <section id="old-age-home" className="py-24 bg-surface-container-low px-8">
                     <div className="max-w-7xl mx-auto">
                         <div className="text-center mb-16">
                             <span className="font-label text-secondary text-xs font-bold tracking-widest uppercase mb-3 block">DMF Initiative</span>
-                            <h2 className="font-headline text-4xl font-extrabold text-primary mb-4">Old Age Home – A Home of Dignity, Care & Compassion</h2>
+                            <h2 className="font-headline text-4xl font-extrabold text-primary mb-4">Shelter Home – A Home of Dignity, Care & Compassion</h2>
                             <div className="w-16 h-1 bg-secondary-container mx-auto mb-6"></div>
                             <p className="text-on-surface-variant max-w-3xl mx-auto leading-relaxed">
-                                At the Dr. Dnyaneshwar Mulay Foundation, we believe that every individual deserves to age with dignity, respect, and emotional security. Our Old Age Home initiative is a heartfelt effort to provide a safe, nurturing, and inclusive environment for senior citizens who seek care, companionship, and a sense of belonging.
+                                At the Dr. Dnyaneshwar Mulay Foundation, we believe that every individual deserves to age with dignity, respect, and emotional security. Our Shelter Home initiative is a heartfelt effort to provide a safe, nurturing, and inclusive environment for senior citizens who seek care, companionship, and a sense of belonging.
                             </p>
                         </div>
 
@@ -751,7 +751,7 @@ export default function ICOE() {
                     <div className="absolute inset-0 opacity-5 pointer-events-none" style={{ backgroundImage: 'radial-gradient(#ffffff 0.5px, transparent 0.5px)', backgroundSize: '24px 24px' }}></div>
                     <div className="max-w-7xl mx-auto relative z-10">
                         <div className="text-center mb-16">
-                            <span className="font-label text-secondary-container text-xs font-bold tracking-widest uppercase mb-3 block">ICOE-KCB-DMF</span>
+                            <span className="font-label text-secondary-container text-xs font-bold tracking-widest uppercase mb-3 block">ICOE</span>
                             <h2 className="font-headline text-4xl font-extrabold text-white mb-4">Other Activities & Job Fairs</h2>
                             <div className="w-16 h-1 bg-secondary-container mx-auto"></div>
                         </div>
@@ -789,12 +789,12 @@ export default function ICOE() {
                             <div className="w-16 h-1 bg-secondary-container mx-auto"></div>
                         </div>
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                            <a href="tel:+8378086159" className="group bg-surface-container-lowest rounded-2xl p-8 text-center shadow-lg hover:-translate-y-2 transition-all duration-300 border border-outline-variant/10">
+                            <a href="tel:+918378086159" className="group bg-surface-container-lowest rounded-2xl p-8 text-center shadow-lg hover:-translate-y-2 transition-all duration-300 border border-outline-variant/10">
                                 <div className="w-16 h-16 bg-secondary-container/10 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-secondary-container transition-colors">
                                     <span className="material-symbols-outlined text-secondary-container text-3xl group-hover:text-on-secondary-container">phone</span>
                                 </div>
                                 <h4 className="font-headline font-bold text-primary mb-2">Phone</h4>
-                                <p className="text-on-surface-variant text-sm">+8378086159</p>
+                                <p className="text-on-surface-variant text-sm">+91 8378086159</p>
                             </a>
                             <a href="mailto:corporate@dmfmop.org" className="group bg-surface-container-lowest rounded-2xl p-8 text-center shadow-lg hover:-translate-y-2 transition-all duration-300 border border-outline-variant/10">
                                 <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-primary transition-colors">

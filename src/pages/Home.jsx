@@ -117,7 +117,7 @@ export default function Home() {
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
                             <div className="md:col-span-2">
                                 <span className="text-secondary font-bold text-xs tracking-widest uppercase mb-3 block">About DMF</span>
-                                <h2 className="font-headline text-3xl font-bold text-primary mb-4">Dr. Dnyaneshwar Mule Foundation</h2>
+                                <h2 className="font-headline text-3xl font-bold text-primary mb-4">Dr. Dnyaneshwar Mulay Foundation</h2>
                                 <p className="text-on-surface-variant leading-relaxed mb-4">
                                     Since 2019, DMF is a globally recognized organization with deep roots in India, committed to providing innovative and beneficial solutions. During flood emergencies in Kolhapur Sangali district in Maharashtra, and subsequently during COVID-19, DMF strengthened its work and today conducts significant activities contributing to social change.
                                 </p>
@@ -172,8 +172,8 @@ export default function Home() {
                 <section className="py-24 bg-surface px-8">
                     <div className="max-w-7xl mx-auto">
                         <div className="text-center mb-16">
-                            <span className="text-secondary font-bold text-xs tracking-widest uppercase mb-3 block">The Mission</span>
-                            <h2 className="font-headline text-4xl font-bold text-primary">Creating a Society Based on</h2>
+                            <span className="text-secondary font-bold text-xs tracking-widest uppercase mb-3 block">The Foundation</span>
+                            <h2 className="font-headline text-4xl font-bold text-primary">The Pillars of DMF</h2>
                         </div>
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
                             {/* Positivity Column (MOP) */}

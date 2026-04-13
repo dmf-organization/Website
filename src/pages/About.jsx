@@ -9,8 +9,8 @@ const BASE_SLIDES = [
     },
     {
         src: '/Images/social_work_1.png',
-        alt: 'Dr. Dnyaneshwar Mule',
-        caption: 'Dr. Dnyaneshwar Mule — Founder & President',
+        alt: 'Dr. Dnyaneshwar Mulay',
+        caption: 'Dr. Dnyaneshwar Mulay — Founder & President',
     },
     {
         src: '/Images/about_page_6.png',
@@ -163,7 +163,7 @@ export default function About() {
                     {/* <div className="relative z-10 max-w-7xl mx-auto px-8 w-full pt-24">
                         <div className="max-w-3xl">
                             <span className="inline-block font-label text-secondary-container text-sm font-semibold tracking-[0.2em] uppercase mb-4">
-                                Dr. Dnyaneshwar Mule Foundation • DMF
+                                Dr. Dnyaneshwar Mulay Foundation • DMF
                             </span>
                             <h1 className="font-headline text-5xl md:text-6xl font-extrabold text-white leading-tight tracking-tight mb-6">
                                 Movement of <span className="text-secondary-container">Positivity</span>
@@ -222,7 +222,7 @@ export default function About() {
                     <div className="max-w-7xl mx-auto px-8 grid grid-cols-1 md:grid-cols-12 gap-16 items-center">
                         <div className="md:col-span-4 relative">
                             <div className="relative z-10 aspect-[4/5] overflow-hidden rounded-lg shadow-2xl bg-surface-container">
-                                <img alt="Dr. Dnyaneshwar Mule" className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-700" src="/Images/dr_mule.png" />
+                                <img alt="Dr. Dnyaneshwar Mulay" className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-700" src="/Images/dr_Mulay.png" />
                             </div>
                             <div className="absolute -bottom-12 -right-12 w-64 h-64 bg-secondary-container/10 -z-10 rounded-full blur-3xl"></div>
                         </div>
@@ -231,7 +231,7 @@ export default function About() {
                             <h2 className="font-headline text-4xl font-bold text-primary mb-6 leading-tight">Dr. Dnyaneshwar Mulay</h2>
                             <div className="space-y-5 text-on-surface-variant leading-relaxed text-base">
                                 <p>
-                                    Dr. Dnyaneshwar Mulay is a distinguished career diplomat of the Indian Foreign Service and the Founder & President of the Dr. Dnyaneshwar Mule Foundation. He previously served as Secretary in the Ministry of External Affairs, Government of India, and as an Advisor to the National Skill Development Corporation.
+                                    Dr. Dnyaneshwar Mulay is a distinguished career diplomat of the Indian Foreign Service and the Founder & President of the Dr. Dnyaneshwar Mulay Foundation. He previously served as Secretary in the Ministry of External Affairs, Government of India, and as an Advisor to the National Skill Development Corporation.
                                 </p>
                                 <p>
                                     Since 2019, DMF is a globally recognized organization with deep roots in India, committed to providing innovative and beneficial solutions. During flood emergencies in Kolhapur Sangali district in Maharashtra and subsequently during COVID-19, DMF strengthened its work and today conducts significant activities contributing to social change.
@@ -245,7 +245,7 @@ export default function About() {
                             </div>
                             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-8">
                                 {[
-                                    { role: 'President', org: 'Dr. Dnyaneshwar Mule Foundation' },
+                                    { role: 'President', org: 'Dr. Dnyaneshwar Mulay Foundation' },
                                     { role: 'Advisor', org: 'ICOE, Khadki Cantonment' },
                                     { role: 'Former Advisor', org: 'NSDC, Govt. of India' },
                                     { role: 'Former Secretary', org: 'MEA, Govt. of India' },
@@ -442,12 +442,12 @@ export default function About() {
                         </div>
                         {/* Leadership Row */}
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto mb-8">
-                            {/* Dr. Mule */}
+                            {/* Dr. Mulay */}
                             <div className="flip-card aspect-[3/4] w-full max-w-[360px] mx-auto rounded-xl editorial-shadow cursor-pointer">
                                 <div className="flip-card-inner rounded-xl">
                                     <div className="flip-card-front bg-surface-container-lowest flex flex-col rounded-xl overflow-hidden shadow-sm">
                                         <div className="flex-1 bg-gradient-to-br from-primary to-primary-container relative overflow-hidden">
-                                            <img alt="Dr. Dnyaneshwar Mule" className="w-full h-full object-cover object-top" src="/Images/dr_mule.png" />
+                                            <img alt="Dr. Dnyaneshwar Mulay" className="w-full h-full object-cover object-top" src="/Images/dr_Mulay.png" />
                                         </div>
                                         <div className="p-6 shrink-0 bg-surface-container-lowest text-center">
                                             <h4 className="font-headline text-xl font-bold text-primary mb-1">Dr. Dnyaneshwar Mulay</h4>

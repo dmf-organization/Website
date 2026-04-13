@@ -49,7 +49,7 @@ const Footer = () => (
                 <div className="text-gray-400 text-xs mb-1">
                     📧 <a href="mailto:corporate@dmfmop.org" className="hover:text-[#fe9832] transition-colors">corporate@dmfmop.org</a>
                 </div>
-                <div className="text-gray-400 text-xs">📞 +8378086159</div>
+                <div className="text-gray-400 text-xs">📞 +91 8378086159</div>
             </div>
 
             {/* Quick Links & Programs */}
@@ -77,7 +77,7 @@ const Footer = () => (
                     Dr. Babasaheb Ambedkar Road, Khadki, Pune 411003.
                 </p>
                 <p className="text-sm text-[#fe9832] font-bold">corporate@dmfmop.org</p>
-                <p className="text-sm text-gray-300 mt-2">+8378086159</p>
+                <p className="text-sm text-gray-300 mt-2">+91 8378086159</p>
             </div>
         </div>
 
