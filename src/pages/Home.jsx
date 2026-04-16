@@ -53,7 +53,12 @@ export default function Home() {
     const slideImages = [
         "/Images/home_page_slide_image_1.jpeg",
         "/Images/home_page_slide_image_2.jpeg",
-        "/Images/home_page_slide_image_3.jpeg"
+        "/Images/home_page_slide_image_3.jpeg",
+        "/Images/Job_fair.jpeg",
+        "/Images/MoU_COEP.jpeg",
+        "/Images/WhatsApp Image 2026-04-10 at 10.32.25.jpeg",
+        "/Images/WhatsApp Image 2026-04-16 at 5.31.42 PM.jpeg",
+
     ];
 
     useEffect(() => {

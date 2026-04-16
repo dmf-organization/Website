@@ -46,38 +46,52 @@ const Footer = () => (
                 <div className="text-gray-400 text-xs mb-1">
                     🌐 <a href="https://www.dmfmop.org" className="hover:text-[#fe9832] transition-colors">www.dmfmop.org</a>
                 </div>
-                <div className="text-gray-400 text-xs mb-1">
+                {/* <div className="text-gray-400 text-xs mb-1">
                     📧 <a href="mailto:corporate@dmfmop.org" className="hover:text-[#fe9832] transition-colors">corporate@dmfmop.org</a>
                 </div>
-                <div className="text-gray-400 text-xs">📞 +91 8378086159</div>
+                <div className="text-gray-400 text-xs">📞 +91 8378086159</div> */}
             </div>
 
-            {/* Quick Links & Programs */}
-            <div className="flex gap-16 md:gap-20 flex-wrap">
-                <div className="space-y-4">
-                    <h5 className="text-[#fe9832] font-headline font-bold text-sm tracking-widest uppercase mb-6">
-                        Quick Links
-                    </h5>
-                    <ul className="space-y-3">
-                        <li><Link className="text-gray-300 hover:text-white transition-all hover:underline decoration-[#fe9832]" to="/">Home</Link></li>
-                        <li><Link className="text-gray-300 hover:text-white transition-all hover:underline decoration-[#fe9832]" to="/about">What We Are</Link></li>
-                        <li><Link className="text-gray-300 hover:text-white transition-all hover:underline decoration-[#fe9832]" to="/icoe">What We Do</Link></li>
-                    </ul>
-                </div>
-
+            {/* Quick Links */}
+            <div className="bg-white/5 p-8 rounded-xl backdrop-blur-sm border border-white/10 w-full md:w-auto min-w-[180px] flex flex-col gap-4 h-[270px] ">
+                <h5 className="text-[#fe9832] font-headline font-bold text-sm tracking-widest uppercase mb-2">
+                    Quick Links
+                </h5>
+                <ul className="space-y-3">
+                    <li><Link className="text-gray-300 hover:text-white transition-all hover:underline decoration-[#fe9832]" to="/">Home</Link></li>
+                    <li><Link className="text-gray-300 hover:text-white transition-all hover:underline decoration-[#fe9832]" to="/about">What We Are</Link></li>
+                    <li><Link className="text-gray-300 hover:text-white transition-all hover:underline decoration-[#fe9832]" to="/icoe">What We Do</Link></li>
+                    <li><Link className="text-gray-300 hover:text-white transition-all hover:underline decoration-[#fe9832]" to="/media">Media</Link></li>
+                </ul>
             </div>
 
             {/* ICOE Office Address */}
             <div className="bg-white/5 p-8 rounded-xl backdrop-blur-sm border border-white/10 max-w-xs">
-                <h5 className="font-headline font-bold text-sm tracking-widest uppercase text-white mb-4">
-                    ICOE Office
-                </h5>
+                <div className="flex items-center justify-between mb-4">
+                    <h5 className="font-headline font-bold text-sm tracking-widest uppercase text-white mb-0">
+                        ICOE Office
+                    </h5>
+                    <a href="https://maps.app.goo.gl/JWAhkrRXGfwi28ur8?g_st=aw" target="_blank" rel="noopener noreferrer" className="text-[#fe9832] hover:text-white transition-colors" title="View on Google Maps">
+                        <span className="material-symbols-outlined text-2xl">location_on</span>
+                    </a>
+                </div>
                 <p className="text-sm text-gray-300 mb-4 leading-relaxed">
                     First Floor, Maharishi Valmiki Library, Nehru Garden,
                     Dr. Babasaheb Ambedkar Road, Khadki, Pune 411003.
                 </p>
                 <p className="text-sm text-[#fe9832] font-bold">corporate@dmfmop.org</p>
                 <p className="text-sm text-gray-300 mt-2">+91 8378086159</p>
+            </div>
+
+            {/* Location Map */}
+            <div className="w-full md:w-[280px] lg:w-[320px] h-[270px] rounded-xl overflow-hidden border border-white/10 shadow-lg relative opacity-90 hover:opacity-100 transition-opacity mt-6 md:mt-0">
+                <iframe
+                    className="absolute inset-0 w-full h-full"
+                    style={{ border: 0 }}
+                    src="https://maps.google.com/maps?q=Dr.%20Dnyaneshwar%20Mulay%20Foundation,%20Pune&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                    allowFullScreen
+                    loading="lazy"
+                ></iframe>
             </div>
         </div>
 
