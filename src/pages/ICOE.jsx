@@ -40,6 +40,7 @@ export default function ICOE() {
                                         { icon: 'diversity_3', label: 'She Leads', href: '#she-leads' },
                                         { icon: 'build', label: 'Skill Reach', href: '#skill-reach' },
                                         { icon: 'elderly', label: 'Shelter Home', href: '#old-age-home' },
+                                        { icon: 'groups', label: 'DTNT Lives Matter', href: '#dtnt-lives-matter' },
                                         { icon: 'work', label: 'Job Fair', href: '#job-fair' },
                                     ].map((item, i) => (
                                         <a
@@ -75,7 +76,7 @@ export default function ICOE() {
                                     <img
                                         src="/Images/home_page_slide_image_1.jpeg"
                                         alt="Dr. Dnyaneshwar Mulay Foundation Team"
-                                        className="w-full h-auto object-cover max-h-[350px]"
+                                        className="w-full h-auto object-cover max-h-[385px]"
                                     />
                                 </div>
                             </div>
@@ -112,8 +113,16 @@ export default function ICOE() {
                                     </div>
                                 ))}
                             </div>
-                            <div className="md:col-span-2 rounded-2xl overflow-hidden shadow-xl h-full">
-                                <img src="/Images/MOV.jpeg" alt="Movement of Positivity" className="w-full h-full object-cover" />
+                            <div className="md:col-span-2 rounded-2xl overflow-hidden shadow-xl h-full group relative">
+                                <a href="/Publications/MOV.pdf" target="_blank" rel="noopener noreferrer" className="block w-full h-full cursor-pointer relative">
+                                    <img src="/Images/MOV.jpeg" alt="Movement of Positivity" className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+                                    <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                        <div className="flex flex-col items-center text-white transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                                            <span className="material-symbols-outlined text-5xl mb-2">touch_app</span>
+                                            <span className="font-headline font-bold text-xl tracking-widest uppercase">Click Here</span>
+                                        </div>
+                                    </div>
+                                </a>
                             </div>
                         </div>
                         <div className="bg-white/10 border border-white/20 rounded-2xl p-8 text-center">
@@ -746,6 +755,48 @@ export default function ICOE() {
                                     </div>
                                 </div>
 
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                {/* ── DTNT Lives Matter ─────────────────────────── */}
+                <section id="dtnt-lives-matter" className="py-24 bg-surface px-8">
+                    <div className="max-w-7xl mx-auto">
+                        <div className="text-center mb-16">
+                            <span className="font-label text-secondary text-xs font-bold tracking-widest uppercase mb-3 block">DMF Initiative</span>
+                            <h2 className="font-headline text-4xl font-extrabold text-primary mb-4">DTNT Lives Matter</h2>
+                            {/* <div className="w-16 h-1 bg-secondary-container mx-auto mb-6"></div>
+                            <p className="font-headline text-xl text-secondary-container font-bold mb-6">Justice. Dignity. Inclusion.</p> */}
+                        </div>
+
+                        <div className="grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
+                            <div className="md:col-span-7 space-y-6 text-on-surface-variant leading-relaxed text-base">
+                                <p>
+                                    The <strong className="text-primary">DTNT Lives Matter</strong> initiative by the Dr. Dnyaneshwar Mulay Foundation is a comprehensive social initiative committed and active in restoring the dignity, guaranteeing rights, and creating sustainable livelihood opportunities for the De-notified, Nomadic, and Semi-Nomadic Tribes (DTNT) of India.
+                                </p>
+                                <p>
+                                    Long stigmatized and marginalized due to the legacy of the colonial-era <em>Criminal Tribes Act of 1871</em>, these communities today, despite having constitutional rights, continue to face problems of poverty, landlessness, lack of identity documents, and deprivation of education, health, and basic services, which has perpetuated the cycle of their marginalization generation after generation.
+                                </p>
+                                <p>
+                                    In this context, working at the grassroots level, this initiative makes concrete interventions in the areas of <strong className="text-primary">identity, education, healthcare, and livelihood</strong> to provide visibility to the community, strengthen their voice, and create opportunities. Additionally, alongside connecting communities with existing government schemes like the SEED Scheme for Denotified Tribes, it demands and frames more inclusive policies according to their contemporary needs.
+                                </p>
+                                <div className="bg-primary/5 border-l-4 border-secondary-container p-6 rounded-r-xl mt-6">
+                                    <p className="italic text-primary font-medium leading-relaxed">
+                                        Based on the values of justice and inclusion, this initiative brings about a transformation from "a struggle for survival" to "the right to live with dignity," achieving the goal of making these communities self-reliant, empowered, and active participants in the overall development of the nation.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div className="md:col-span-5 flex flex-col gap-6">
+                                <div className="rounded-2xl overflow-hidden shadow-xl border border-outline-variant/20 h-[500px]">
+                                    <img src="/Images/dr_vinayak.jpeg" alt="Prof Dr Vinayak Lashkar" className="w-full h-full object-cover object-top" />
+                                </div>
+                                <div className="bg-surface-container-low p-6 rounded-2xl border-l-4 border-secondary-container">
+                                    <h3 className="font-headline font-bold text-primary text-xl mb-1">Prof Dr Vinayak Lashkar</h3>
+                                    <div className="text-secondary-container font-semibold text-sm uppercase tracking-wider mb-2">Expert - DTNT Development</div>
+                                    <p className="text-on-surface-variant text-sm">Dedicated to DTNT community development.</p>
+                                </div>
                             </div>
                         </div>
                     </div>
